@@ -1,0 +1,727 @@
+[
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/DisplayAttributes",
+    "key": "ContinuousFrequencySupport",
+    "value": "None"
+  },
+  {
+    "path": "/AppleCLCD2/DisplayAttributes",
+    "key": "HasHDMILegacyEDID",
+    "value": false
+  },
+  {
+    "path": "/AppleCLCD2/DisplayAttributes",
+    "key": "MaximumVariableRefreshRate",
+    "value": 7864320
+  },
+  {
+    "path": "/AppleCLCD2/DisplayAttributes",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/DisplayAttributes",
+    "key": "SupportsVariableRefreshRate",
+    "value": true
+  },
+  {
+    "path": "/AppleCLCD2/DisplayAttributes",
+    "key": "VariableRefreshRateRequiresRampRateLimits",
+    "value": false
+  },
+  {
+    "path": "/AppleCLCD2",
+    "key": "EDID UUID",
+    "value": "1E6D0100-0000-0000-0120-010380A05A78"
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3932160
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3928232
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements/DownstreamFormat",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements/DownstreamFormat",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3928232
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3932160
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements/DownstreamFormat",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements/DownstreamFormat",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3932160
+  },
+  {
+    "path": "/AppleCLCD2/PreferredTimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3932160
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3932160
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3932160
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3932160
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 7864162
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3928232
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3276800
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3928232
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3932160
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3276800
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3928232
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3276800
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3928232
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3932160
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 3276800
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 0
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 7856464
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 7864320
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MaximumVariableRefreshRate",
+    "value": 6553600
+  },
+  {
+    "path": "/AppleCLCD2/TimingElements",
+    "key": "MinimumVariableRefreshRate",
+    "value": 3145728
+  }
+]

@@ -54,3 +54,7 @@ BetterDisplay labels coarseDPCD5=1D reserved, but Linuxdrm_dp.h mask06 givesTMDS
 ## Evidence and source safety
 
 `evidence/Hotplug-timing-before.json` vsduring; `Hotplug-breakthrough.md`; hotplug main/watchdoglogs. Macmainlogs anonymizedhomepath and nullbytes represented as literal\0; originals remain in workspace. Sources retain exacttestedbehaviour, including recovery limitation; repositorytools are not turnkey generalMacsupport. Use originalworkspacebinaries unlessrebuildnecessary. Firmwarebinaries excluded.
+
+## Latest continuation: post-hotplug snapshot completed
+
+The previously pending read-only command was executed. See `evidence/Post-hotplug-current/REPORT.md` and accompanying data. Confirmed RAM08/0A, auto-applyoff, identicalOS/I2CEDID with valid1.3/80 factoryheader and SHA256fcb048faa03baf2d3c106f2b0b1cd191df1557322022c94ab8c48b39488a57b0. macOSVRRsupport remainsTRUE, range48–120, continuousNone. Currentfixed4K60SDR8-bitYCbCr444limited,DSCNo. No further variable-rate attempt was performed. The previous next-step request to read the snapshot is now complete; proceed with safe fixed-mode-recovery-first diagnostic design. New factorybaseline must be explicitly backed up and validated, not silently substituted into older tests.

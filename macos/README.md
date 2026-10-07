@@ -36,7 +36,7 @@ For the original user's setup, the next pending command is **read-only**:
 /usr/bin/python3 macos/tools/CAC-Mac-Cache-Lesen.py
 ```
 
-It captures current EDID/custom-EDID status, display modes, DPCD, RAM values and registry data. Its full output stays local and should be reviewed before sharing. The last instruction was issued before this repository snapshot; the user has not yet confirmed executing it after the HDMI-hotplug breakthrough.
+It captures current EDID/custom-EDID status, display modes, DPCD, RAM values and registry data. Its full output stays local and should be reviewed before sharing. The last instruction was issued before this repository snapshot; the subsequent post-hotplug capture is now complete; see `evidence/Post-hotplug-current/REPORT.md`.
 
 ## Recovery caveat
 
