@@ -1,0 +1,38 @@
+Oct 07 23:04:11 steamdeck python3[8455]: RC enabled, status 0
+Oct 07 23:04:11 steamdeck python3[8455]: 0a
+Oct 07 23:04:15 steamdeck python3[8455]: Original RAM08/0A restored; display detection requested
+Oct 07 23:04:15 steamdeck systemd[1]: cac2505-vrr.service: Deactivated successfully.
+Oct 07 23:04:15 steamdeck systemd[1]: Stopped CAC-2505 volatile VRR configuration.
+Oct 07 23:04:15 steamdeck systemd[1]: cac2505-vrr.service: Consumed 8.390s CPU time over 7min 23.919s wall clock time, 16.8M memory peak.
+Oct 07 23:04:15 steamdeck systemd[1]: Started CAC-2505 volatile VRR configuration.
+Oct 07 23:04:15 steamdeck python3[12045]: CAC automatic helper started: exact firmware7.02.116 / LG identity only
+Oct 07 23:04:15 steamdeck python3[12045]: Waiting ten seconds for a settled adapter connection
+Oct 07 23:04:25 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:25 steamdeck python3[12045]: 08
+Oct 07 23:04:25 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:25 steamdeck python3[12045]: 0a
+Oct 07 23:04:25 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:25 steamdeck python3[12045]: 02
+Oct 07 23:04:26 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:26 steamdeck python3[12045]: 48
+Oct 07 23:04:29 steamdeck python3[12045]: Gaming VRR requested:
+Oct 07 23:04:29 steamdeck python3[12045]: Gaming 4K120/HDR must be selected once in Steam display settings; not forced by this helper.
+Oct 07 23:04:29 steamdeck python3[12045]: Activated gaming session; {"0x7": "c1", "0x80": "0bf01afe", "0x2214": "03", "0x3030": "01000000000091000000000308000000"}
+Oct 07 23:04:42 steamdeck python3[12045]: Suspend/resume detected; waiting ten seconds before one recovery attempt
+Oct 07 23:04:52 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:52 steamdeck python3[12045]: 08
+Oct 07 23:04:53 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:53 steamdeck python3[12045]: 0a
+Oct 07 23:04:56 steamdeck python3[12045]: Original RAM08/0A restored; display detection requested
+Oct 07 23:04:56 steamdeck python3[12045]: Resume fast path: verified restoration complete; skipping second ten-second wait
+Oct 07 23:04:56 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:56 steamdeck python3[12045]: 08
+Oct 07 23:04:56 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:56 steamdeck python3[12045]: 0a
+Oct 07 23:04:57 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:57 steamdeck python3[12045]: 02
+Oct 07 23:04:57 steamdeck python3[12045]: RC enabled, status 0
+Oct 07 23:04:57 steamdeck python3[12045]: 48
+Oct 07 23:05:00 steamdeck python3[12045]: Gaming VRR requested:
+Oct 07 23:05:00 steamdeck python3[12045]: Gaming 4K120/HDR must be selected once in Steam display settings; not forced by this helper.
+Oct 07 23:05:00 steamdeck python3[12045]: Activated gaming session; {"0x7": "c1", "0x80": "0bf01afe", "0x2214": "03", "0x3030": "01000000000091000000000308000000"}

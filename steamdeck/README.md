@@ -100,6 +100,8 @@ The checksums detect accidental changes to package files; they are not a signatu
 
 ## Suspend/resume recovery
 
-The helper detects completed suspend cycles using the kernel suspend-success counter, with a BOOTTIME/MONOTONIC fallback. After resume it waits ten seconds and makes one recovery attempt: restore the owned RAM configuration, request detection, then activate again through the normal verified path. Allow about 30–40 seconds for VRR to return. This was verified in both modes on 7 October 2026.
+The helper detects completed suspend cycles using the kernel suspend-success counter, with a BOOTTIME/MONOTONIC fallback. After resume it waits ten seconds and makes one recovery attempt: restore the owned RAM configuration, request detection, then activate again through the normal verified path. If the same connection and session are still present after verified restoration, the second ten-second activation wait is skipped; reconnect activation keeps its full settling delay. Allow about 20–25 seconds for VRR to return. This was verified in both modes on 7 October 2026.
 
 The tested Deck woke by itself within a few seconds while the adapter was connected. The cause of that separate wake behaviour remains unknown; this fix restores VRR after resume and does not prevent unwanted wake-ups. Prolonged sleep and repeated-cycle endurance are not yet verified.
+
+The shortened resume path completed in 18 seconds in both Gaming (23:04:42–23:05:00) and Desktop (23:06:49–23:07:07) tests, measured from helper detection to its activation log. The user confirmed success in both modes. These are observed timings, not a guaranteed upper bound.

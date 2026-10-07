@@ -35,3 +35,7 @@ Firmware binaries are intentionally excluded. The tested Apple fullrom SHA-256 w
 ## Suspend/resume follow-up
 
 A short suspend initially disabled VRR while the helper still considered the connection active. The kernel logged a warning in `amdgpu_dm_handle_vrr_transition`. A duration-only detector with a one-second threshold missed a short sleep; the kernel suspend-success counter subsequently detected it. Recovery restored 08/0A, reapplied 02/48 and re-enabled session VRR. Desktop recovery completed at 22:58:14 and Gaming recovery at 23:00:27. The user observed VRR returning automatically in both tests. See the two suspend evidence logs. The warning does not establish why the Deck woke automatically.
+
+## Shorter resume path
+
+After successful restoration, the helper skips the second ten-second settling delay only when adapter/connector and session still match. Initial connection keeps the delay. Both Desktop and Gaming recovered in 18 seconds from logged resume detection to activation; evidence is in the two `Suspend-Kurz` logs. The user confirmed both tests succeeded.

@@ -99,11 +99,15 @@ def restore(info):
  if errors:raise RuntimeError('RAM restoration unconfirmed: '+'; '.join(errors))
  detect(info[2]);OWNED.unlink(missing_ok=True);log('Original RAM08/0A restored; display detection requested')
 
-def activation(info,s):
- log('Waiting ten seconds for a settled adapter connection')
- for _ in range(50):
-  if stopping:raise RuntimeError('Service stopping before activation')
-  time.sleep(.2)
+def activation(info,s,settled=False):
+ if settled:
+  log('Resume fast path: verified restoration complete; skipping second ten-second wait')
+ else:
+  log('Waiting ten seconds for a settled adapter connection')
+  for _ in range(50):
+   if stopping:raise RuntimeError('Service stopping before activation')
+   time.sleep(.2)
+ if stopping:raise RuntimeError('Service stopping before activation')
  if probe()!=info or session()!=s:raise RuntimeError('Connection/session changed while settling; no RAM write')
  if a.worker('read')!='08' or a.worker('read-type')!='0a':raise RuntimeError('Expected original RAM08/0A; refusing to adopt another test')
  OWNED.write_text(json.dumps(info))
@@ -135,6 +139,7 @@ def main():
  try:
   while not stopping:
    try:
+    restored_key=None
     current_sleep=sleep_offset()
     current_suspend=suspend_count()
     resumed=(current_suspend is not None and suspend_mark is not None and current_suspend>suspend_mark) or current_sleep-sleep_mark>0.05
@@ -148,7 +153,9 @@ def main():
      recovery_info=probe()
      if state and recovery_info==state[0]:
       # Restore known owned state, then follow normal verified activation.
+      previous_session=state[1]
       restore(recovery_info)
+      restored_key=(recovery_info,previous_session)
       state=None;blocked=None
      elif state:
       raise RuntimeError('Resume identity unavailable; recovery deferred to reconnect')
@@ -173,7 +180,7 @@ def main():
      display_on(s[0]);state=(info,s);log('Session switch: '+s[0])
     elif state is None and key!=blocked:
      missing_hid=0
-     activation(info,s);state=(info,s);blocked=None
+     activation(info,s,settled=(key==restored_key));state=(info,s);blocked=None
     elif state and info!=state[0]:
      raise RuntimeError('Connector changed; disconnect/reconnect before retry')
    except Exception as e:
