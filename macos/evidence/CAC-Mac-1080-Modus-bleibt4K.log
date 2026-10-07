@@ -1,0 +1,775 @@
+get --osEDID exit 0
+AP///////wAebQEAAQEBAQEgAQSFoFp4Cu6Ro1RMmSYPUFShCAAxQEVAYUBxQIGA0cABAQEBCOgAMPJwWoCwWIoAQIRjAAAeb8IAoKCgVVAwIDUAQIRjAAAeAAAA/QAYeB7/dwAKICAgICAgAAAA/ABMRyBUViBTU0NSMgogAeUCA13xXWFgdnVmZdvaEB8EEwUUAwISICEiFV1eX2JjZD9AIwlXB24DDABAALhELACAAQIDBG3YXcQBeIBrAjB4wzMF4gDP4wXAAOMGDQHiD//rAUbQAEgihn5Ub3sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHg==
+
+get --autoApplyCustomEDID exit 0
+off
+
+get --customEDID exit 1
+Failed.
+
+Combined temporary test: RAM217 08->48, RAM25B 0A->02 plus continuous-frequency EDID bit and 48-120 Hz range; then request physical 1080p120 SDR. No flash write.
+CAC-Mac-Typ-RAM — two-byte volatile test
+Reply cmd=01 request=00000000: 01 00 2C B4 01 01 00 05 00 00 00 05 00 00 00 50 52 49 55 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=30 request=00004000: 01 00 2C B4 01 30 00 04 40 00 00 04 00 00 00 07 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D6 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=31 request=90000217: 01 00 2C B4 01 31 00 18 02 00 90 01 00 00 00 08 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+RAM 90000217 = 08
+Reply cmd=31 request=9000025B: 01 00 2C B4 01 31 00 5C 02 00 90 01 00 00 00 0A 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2B 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+RAM 9000025B = 0A
+Reply cmd=02 request=00000000: 01 00 2C B4 00 02 00 00 00 00 00 00 00 00 00 00 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 54 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+Type YES for a 30-second test with automatic EDID restoration: CAC-Mac-Typ-RAM — two-byte volatile test
+Reply cmd=01 request=00000000: 01 00 2C B4 01 01 00 05 00 00 00 05 00 00 00 50 52 49 55 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=30 request=00004000: 01 00 2C B4 01 30 00 04 40 00 00 04 00 00 00 07 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D6 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=31 request=90000217: 01 00 2C B4 01 31 00 18 02 00 90 01 00 00 00 08 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=31 request=9000025B: 01 00 2C B4 01 31 00 5C 02 00 90 01 00 00 00 0A 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2B 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=21 request=9000025B: 01 00 2C B4 01 21 00 5C 02 00 90 01 00 00 00 02 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 45 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=31 request=9000025B: 01 00 2C B4 01 31 00 5C 02 00 90 01 00 00 00 02 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 35 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+VERIFIED RAM 9000025B = 02
+Reply cmd=21 request=90000217: 01 00 2C B4 01 21 00 18 02 00 90 01 00 00 00 48 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=31 request=90000217: 01 00 2C B4 01 31 00 18 02 00 90 01 00 00 00 48 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 33 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+VERIFIED RAM 90000217 = 48
+Reply cmd=02 request=00000000: 01 00 2C B4 00 02 00 00 00 00 00 00 00 00 00 00 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+set --customEDID exit 0
+
+perform --applyCustomEDID exit 0
+
+get --osEDID exit 0
+AP///////wAebQEAAQEBAQEgAQSFoFp4C+6Ro1RMmSYPUFShCAAxQEVAYUBxQIGA0cABAQEBCOgAMPJwWoCwWIoAQIRjAAAeb8IAoKCgVVAwIDUAQIRjAAAeAAAA/QAweB7/dwAKICAgICAgAAAA/ABMRyBUViBTU0NSMgogAcwCA13xXWFgdnVmZdvaEB8EEwUUAwISICEiFV1eX2JjZD9AIwlXB24DDABAALhELACAAQIDBG3YXcQBeIBrAjB4wzMF4gDP4wXAAOMGDQHiD//rAUbQAEgihn5Ub3sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHg==
+
+set --hdr exit 0
+
+get --displayModeList exit 0
+0 - 800x600 HiDPI 120Hz 10bpc 
+1 - 800x600 HiDPI 100Hz 10bpc 
+2 - 800x600 HiDPI 60Hz 10bpc 
+3 - 800x600 60Hz 10bpc 
+4 - 800x600 HiDPI 50Hz 10bpc 
+5 - 800x600 HiDPI 30Hz 10bpc 
+6 - 800x600 HiDPI 25Hz 10bpc 
+7 - 800x600 HiDPI 24Hz 10bpc 
+8 - 960x540 HiDPI 120Hz 10bpc 
+9 - 960x540 HiDPI 100Hz 10bpc 
+10 - 960x540 HiDPI 60Hz 10bpc 
+11 - 960x540 HiDPI 50Hz 10bpc 
+12 - 960x540 HiDPI 30Hz 10bpc 
+13 - 960x540 HiDPI 25Hz 10bpc 
+14 - 960x540 HiDPI 24Hz 10bpc 
+15 - 1024x576 HiDPI 120Hz 10bpc 
+16 - 1024x576 120Hz 10bpc 
+17 - 1024x576 HiDPI 100Hz 10bpc 
+18 - 1024x576 100Hz 10bpc 
+19 - 1024x576 HiDPI 60Hz 10bpc 
+20 - 1024x576 60Hz 10bpc 
+21 - 1024x576 HiDPI 50Hz 10bpc 
+22 - 1024x576 50Hz 10bpc 
+23 - 1024x576 HiDPI 30Hz 10bpc 
+24 - 1024x576 30Hz 10bpc 
+25 - 1024x576 HiDPI 25Hz 10bpc 
+26 - 1024x576 25Hz 10bpc 
+27 - 1024x576 HiDPI 24Hz 10bpc 
+28 - 1024x576 24Hz 10bpc 
+29 - 1024x768 120Hz 10bpc 
+30 - 1024x768 100Hz 10bpc 
+31 - 1024x768 60Hz 10bpc 
+32 - 1024x768 50Hz 10bpc 
+33 - 1024x768 30Hz 10bpc 
+34 - 1024x768 25Hz 10bpc 
+35 - 1024x768 24Hz 10bpc 
+36 - 1152x648 HiDPI 120Hz 10bpc 
+37 - 1152x648 HiDPI 100Hz 10bpc 
+38 - 1152x648 HiDPI 60Hz 10bpc 
+39 - 1152x648 HiDPI 50Hz 10bpc 
+40 - 1152x648 HiDPI 30Hz 10bpc 
+41 - 1152x648 HiDPI 25Hz 10bpc 
+42 - 1152x648 HiDPI 24Hz 10bpc 
+43 - 1152x864 60Hz 10bpc 
+44 - 1280x720 120Hz 10bpc 
+45 - 1280x720 HiDPI 120Hz 10bpc 
+46 - 1280x720 100Hz 10bpc 
+47 - 1280x720 HiDPI 100Hz 10bpc 
+48 - 1280x720 60Hz 10bpc 
+49 - 1280x720 HiDPI 60Hz 10bpc 
+50 - 1280x720 50Hz 10bpc 
+51 - 1280x720 HiDPI 50Hz 10bpc 
+52 - 1280x720 30Hz 10bpc 
+53 - 1280x720 HiDPI 30Hz 10bpc 
+54 - 1280x720 25Hz 10bpc 
+55 - 1280x720 HiDPI 25Hz 10bpc 
+56 - 1280x720 24Hz 10bpc 
+57 - 1280x720 HiDPI 24Hz 10bpc 
+58 - 1280x960 120Hz 10bpc 
+59 - 1280x960 100Hz 10bpc 
+60 - 1280x960 60Hz 10bpc 
+61 - 1280x960 50Hz 10bpc 
+62 - 1280x960 30Hz 10bpc 
+63 - 1280x960 25Hz 10bpc 
+64 - 1280x960 24Hz 10bpc 
+65 - 1280x1024 60Hz 10bpc 
+66 - 1344x756 120Hz 10bpc 
+67 - 1344x756 100Hz 10bpc 
+68 - 1344x756 60Hz 10bpc 
+69 - 1344x756 50Hz 10bpc 
+70 - 1344x756 30Hz 10bpc 
+71 - 1344x756 25Hz 10bpc 
+72 - 1344x756 24Hz 10bpc 
+73 - 1344x1008 120Hz 10bpc 
+74 - 1344x1008 100Hz 10bpc 
+75 - 1344x1008 60Hz 10bpc 
+76 - 1344x1008 50Hz 10bpc 
+77 - 1344x1008 30Hz 10bpc 
+78 - 1344x1008 25Hz 10bpc 
+79 - 1344x1008 24Hz 10bpc 
+80 - 1504x846 HiDPI 120Hz 10bpc 
+81 - 1504x846 HiDPI 100Hz 10bpc 
+82 - 1504x846 HiDPI 60Hz 10bpc 
+83 - 1504x846 HiDPI 50Hz 10bpc 
+84 - 1504x846 HiDPI 30Hz 10bpc 
+85 - 1504x846 HiDPI 25Hz 10bpc 
+86 - 1504x846 HiDPI 24Hz 10bpc 
+87 - 1600x900 120Hz 10bpc 
+88 - 1600x900 HiDPI 120Hz 10bpc 
+89 - 1600x900 HiDPI 100Hz 10bpc 
+90 - 1600x900 100Hz 10bpc 
+91 - 1600x900 60Hz 10bpc 
+92 - 1600x900 HiDPI 60Hz 10bpc 
+93 - 1600x900 50Hz 10bpc 
+94 - 1600x900 HiDPI 50Hz 10bpc 
+95 - 1600x900 30Hz 10bpc 
+96 - 1600x900 HiDPI 30Hz 10bpc 
+97 - 1600x900 25Hz 10bpc 
+98 - 1600x900 HiDPI 25Hz 10bpc 
+99 - 1600x900 24Hz 10bpc 
+100 - 1600x900 HiDPI 24Hz 10bpc 
+101 - 1600x1200 120Hz 10bpc 
+102 - 1600x1200 100Hz 10bpc 
+103 - 1600x1200 60Hz 10bpc 
+104 - 1600x1200 50Hz 10bpc 
+105 - 1600x1200 30Hz 10bpc 
+106 - 1600x1200 25Hz 10bpc 
+107 - 1600x1200 24Hz 10bpc 
+108 - 1680x945 HiDPI 120Hz 10bpc 
+109 - 1680x945 HiDPI 100Hz 10bpc 
+110 - 1680x945 HiDPI 60Hz 10bpc 
+111 - 1680x945 HiDPI 50Hz 10bpc 
+112 - 1680x945 HiDPI 30Hz 10bpc 
+113 - 1680x945 HiDPI 25Hz 10bpc 
+114 - 1680x945 HiDPI 24Hz 10bpc 
+115 - 1920x1080 120Hz 10bpc 
+116 - 1920x1080 HiDPI 120Hz 10bpc Current Default Native 
+117 - 1920x1080 100Hz 10bpc 
+118 - 1920x1080 HiDPI 100Hz 10bpc Native 
+119 - 1920x1080 60Hz 10bpc 
+120 - 1920x1080 HiDPI 60Hz 10bpc Native 
+121 - 1920x1080 50Hz 10bpc 
+122 - 1920x1080 HiDPI 50Hz 10bpc Native 
+123 - 1920x1080 30Hz 10bpc 
+124 - 1920x1080 HiDPI 30Hz 10bpc Native 
+125 - 1920x1080 25Hz 10bpc 
+126 - 1920x1080 HiDPI 25Hz 10bpc Native 
+127 - 1920x1080 HiDPI 24Hz 10bpc Native 
+128 - 1920x1080 24Hz 10bpc 
+129 - 2048x1080 HiDPI 120Hz 10bpc 
+130 - 2048x1080 HiDPI 100Hz 10bpc 
+131 - 2048x1080 HiDPI 60Hz 10bpc 
+132 - 2048x1080 HiDPI 50Hz 10bpc 
+133 - 2048x1080 HiDPI 30Hz 10bpc 
+134 - 2048x1080 HiDPI 25Hz 10bpc 
+135 - 2048x1080 HiDPI 24Hz 10bpc 
+136 - 2048x1152 HiDPI 120Hz 10bpc 
+137 - 2048x1152 120Hz 10bpc 
+138 - 2048x1152 HiDPI 100Hz 10bpc 
+139 - 2048x1152 100Hz 10bpc 
+140 - 2048x1152 60Hz 10bpc 
+141 - 2048x1152 HiDPI 60Hz 10bpc 
+142 - 2048x1152 HiDPI 50Hz 10bpc 
+143 - 2048x1152 50Hz 10bpc 
+144 - 2048x1152 HiDPI 30Hz 10bpc 
+145 - 2048x1152 30Hz 10bpc 
+146 - 2048x1152 25Hz 10bpc 
+147 - 2048x1152 HiDPI 25Hz 10bpc 
+148 - 2048x1152 HiDPI 24Hz 10bpc 
+149 - 2048x1152 24Hz 10bpc 
+150 - 2304x1296 HiDPI 120Hz 10bpc 
+151 - 2304x1296 120Hz 10bpc 
+152 - 2304x1296 100Hz 10bpc 
+153 - 2304x1296 HiDPI 100Hz 10bpc 
+154 - 2304x1296 HiDPI 60Hz 10bpc 
+155 - 2304x1296 60Hz 10bpc 
+156 - 2304x1296 50Hz 10bpc 
+157 - 2304x1296 HiDPI 50Hz 10bpc 
+158 - 2304x1296 HiDPI 30Hz 10bpc 
+159 - 2304x1296 30Hz 10bpc 
+160 - 2304x1296 HiDPI 25Hz 10bpc 
+161 - 2304x1296 25Hz 10bpc 
+162 - 2304x1296 24Hz 10bpc 
+163 - 2304x1296 HiDPI 24Hz 10bpc 
+164 - 2560x1440 120Hz 10bpc 
+165 - 2560x1440 HiDPI 120Hz 10bpc 
+166 - 2560x1440 HiDPI 100Hz 10bpc 
+167 - 2560x1440 100Hz 10bpc 
+168 - 2560x1440 HiDPI 60Hz 10bpc 
+169 - 2560x1440 60Hz 10bpc 
+170 - 2560x1440 HiDPI 50Hz 10bpc 
+171 - 2560x1440 50Hz 10bpc 
+172 - 2560x1440 HiDPI 30Hz 10bpc 
+173 - 2560x1440 30Hz 10bpc 
+174 - 2560x1440 HiDPI 25Hz 10bpc 
+175 - 2560x1440 25Hz 10bpc 
+176 - 2560x1440 HiDPI 24Hz 10bpc 
+177 - 2560x1440 24Hz 10bpc 
+178 - 3008x1692 120Hz 10bpc 
+179 - 3008x1692 HiDPI 120Hz 10bpc 
+180 - 3008x1692 HiDPI 100Hz 10bpc 
+181 - 3008x1692 100Hz 10bpc 
+182 - 3008x1692 HiDPI 60Hz 10bpc 
+183 - 3008x1692 60Hz 10bpc 
+184 - 3008x1692 50Hz 10bpc 
+185 - 3008x1692 HiDPI 50Hz 10bpc 
+186 - 3008x1692 HiDPI 30Hz 10bpc 
+187 - 3008x1692 30Hz 10bpc 
+188 - 3008x1692 HiDPI 25Hz 10bpc 
+189 - 3008x1692 25Hz 10bpc 
+190 - 3008x1692 HiDPI 24Hz 10bpc 
+191 - 3008x1692 24Hz 10bpc 
+192 - 3200x1800 120Hz 10bpc 
+193 - 3200x1800 100Hz 10bpc 
+194 - 3200x1800 HiDPI 100Hz 10bpc 
+195 - 3200x1800 60Hz 10bpc 
+196 - 3200x1800 HiDPI 60Hz 10bpc 
+197 - 3200x1800 50Hz 10bpc 
+198 - 3200x1800 HiDPI 50Hz 10bpc 
+199 - 3200x1800 HiDPI 30Hz 10bpc 
+200 - 3200x1800 30Hz 10bpc 
+201 - 3200x1800 HiDPI 25Hz 10bpc 
+202 - 3200x1800 25Hz 10bpc 
+203 - 3200x1800 HiDPI 24Hz 10bpc 
+204 - 3200x1800 24Hz 10bpc 
+205 - 3360x1890 120Hz 10bpc 
+206 - 3360x1890 HiDPI 100Hz 10bpc 
+207 - 3360x1890 100Hz 10bpc 
+208 - 3360x1890 60Hz 10bpc 
+209 - 3360x1890 HiDPI 60Hz 10bpc 
+210 - 3360x1890 HiDPI 50Hz 10bpc 
+211 - 3360x1890 50Hz 10bpc 
+212 - 3360x1890 HiDPI 30Hz 10bpc 
+213 - 3360x1890 30Hz 10bpc 
+214 - 3360x1890 25Hz 10bpc 
+215 - 3360x1890 HiDPI 25Hz 10bpc 
+216 - 3360x1890 HiDPI 24Hz 10bpc 
+217 - 3360x1890 24Hz 10bpc 
+218 - 3840x2160 120Hz 10bpc Native 
+219 - 3840x2160 100Hz 10bpc Native 
+220 - 3840x2160 60Hz 10bpc Native 
+221 - 3840x2160 50Hz 10bpc Native 
+222 - 3840x2160 30Hz 10bpc Native 
+223 - 3840x2160 25Hz 10bpc Native 
+224 - 3840x2160 24Hz 10bpc Native 
+225 - 4096x2160 120Hz 10bpc 
+226 - 4096x2160 100Hz 10bpc 
+227 - 4096x2160 60Hz 10bpc 
+228 - 4096x2160 50Hz 10bpc 
+229 - 4096x2160 30Hz 10bpc 
+230 - 4096x2160 25Hz 10bpc 
+231 - 4096x2160 24Hz 10bpc 
+232 - 1024x768 HiDPI 120Hz 10bpc 
+233 - 1024x768 HiDPI 100Hz 10bpc 
+234 - 1024x768 HiDPI 60Hz 10bpc 
+235 - 1024x768 HiDPI 50Hz 10bpc 
+236 - 1024x768 HiDPI 30Hz 10bpc 
+237 - 1024x768 HiDPI 25Hz 10bpc 
+238 - 1024x768 HiDPI 24Hz 10bpc 
+239 - 1280x960 HiDPI 120Hz 10bpc 
+240 - 1280x960 HiDPI 100Hz 10bpc 
+241 - 1280x960 HiDPI 60Hz 10bpc 
+242 - 1280x960 HiDPI 50Hz 10bpc 
+243 - 1280x960 HiDPI 30Hz 10bpc 
+244 - 1280x960 HiDPI 25Hz 10bpc 
+245 - 1280x960 HiDPI 24Hz 10bpc 
+246 - 1344x756 HiDPI 120Hz 10bpc 
+247 - 1344x756 HiDPI 100Hz 10bpc 
+248 - 1344x756 HiDPI 60Hz 10bpc 
+249 - 1344x756 HiDPI 50Hz 10bpc 
+250 - 1344x756 HiDPI 30Hz 10bpc 
+251 - 1344x756 HiDPI 25Hz 10bpc 
+252 - 1344x756 HiDPI 24Hz 10bpc 
+253 - 1344x1008 HiDPI 120Hz 10bpc 
+254 - 1344x1008 HiDPI 100Hz 10bpc 
+255 - 1344x1008 HiDPI 60Hz 10bpc 
+256 - 1344x1008 HiDPI 50Hz 10bpc 
+257 - 1344x1008 HiDPI 30Hz 10bpc 
+258 - 1344x1008 HiDPI 25Hz 10bpc 
+259 - 1344x1008 HiDPI 24Hz 10bpc 
+260 - 1600x1200 HiDPI 120Hz 10bpc 
+261 - 1600x1200 HiDPI 100Hz 10bpc 
+262 - 1600x1200 HiDPI 60Hz 10bpc 
+263 - 1600x1200 HiDPI 50Hz 10bpc 
+264 - 1600x1200 HiDPI 30Hz 10bpc 
+265 - 1600x1200 HiDPI 25Hz 10bpc 
+266 - 1600x1200 HiDPI 24Hz 10bpc 
+267 - 3840x2160 HiDPI 60Hz 10bpc 
+268 - 3840x2160 HiDPI 50Hz 10bpc 
+269 - 3840x2160 HiDPI 30Hz 10bpc 
+270 - 3840x2160 HiDPI 25Hz 10bpc 
+271 - 3840x2160 HiDPI 24Hz 10bpc 
+272 - 400x300 HiDPI 60Hz 10bpc Unsafe
+273 - 512x384 HiDPI 120Hz 10bpc Unsafe
+274 - 512x384 HiDPI 100Hz 10bpc Unsafe
+275 - 512x384 HiDPI 60Hz 10bpc Unsafe
+276 - 512x384 HiDPI 60Hz 10bpc Unsafe
+277 - 512x384 HiDPI 50Hz 10bpc Unsafe
+278 - 512x384 HiDPI 30Hz 10bpc Unsafe
+279 - 512x384 HiDPI 25Hz 10bpc Unsafe
+280 - 512x384 HiDPI 24Hz 10bpc Unsafe
+281 - 576x432 HiDPI 60Hz 10bpc Unsafe
+282 - 640x360 HiDPI 120Hz 10bpc Unsafe
+283 - 640x360 HiDPI 100Hz 10bpc Unsafe
+284 - 640x360 HiDPI 60Hz 10bpc Unsafe
+285 - 640x360 HiDPI 60Hz 10bpc Unsafe
+286 - 640x360 HiDPI 50Hz 10bpc Unsafe
+287 - 640x360 HiDPI 50Hz 10bpc Unsafe
+288 - 640x360 HiDPI 30Hz 10bpc Unsafe
+289 - 640x360 HiDPI 25Hz 10bpc Unsafe
+290 - 640x360 HiDPI 24Hz 10bpc Unsafe
+291 - 640x480 HiDPI 120Hz 10bpc Unsafe
+292 - 640x480 HiDPI 100Hz 10bpc Unsafe
+293 - 640x480 HiDPI 60Hz 10bpc Unsafe
+294 - 640x480 HiDPI 50Hz 10bpc Unsafe
+295 - 640x480 HiDPI 30Hz 10bpc Unsafe
+296 - 640x480 HiDPI 25Hz 10bpc Unsafe
+297 - 640x480 HiDPI 24Hz 10bpc Unsafe
+298 - 640x480 60Hz 10bpc Unsafe
+299 - 640x512 HiDPI 60Hz 10bpc Unsafe
+300 - 672x378 HiDPI 120Hz 10bpc Unsafe
+301 - 672x378 HiDPI 100Hz 10bpc Unsafe
+302 - 672x378 HiDPI 60Hz 10bpc Unsafe
+303 - 672x378 HiDPI 50Hz 10bpc Unsafe
+304 - 672x378 HiDPI 30Hz 10bpc Unsafe
+305 - 672x378 HiDPI 25Hz 10bpc Unsafe
+306 - 672x378 HiDPI 24Hz 10bpc Unsafe
+307 - 672x504 HiDPI 120Hz 10bpc Unsafe
+308 - 672x504 HiDPI 100Hz 10bpc Unsafe
+309 - 672x504 HiDPI 60Hz 10bpc Unsafe
+310 - 672x504 HiDPI 50Hz 10bpc Unsafe
+311 - 672x504 HiDPI 30Hz 10bpc Unsafe
+312 - 672x504 HiDPI 25Hz 10bpc Unsafe
+313 - 672x504 HiDPI 24Hz 10bpc Unsafe
+314 - 720x400 70Hz 10bpc Unsafe
+315 - 720x480 60Hz 10bpc Unsafe
+316 - 720x576 50Hz 10bpc Unsafe
+317 - 800x450 HiDPI 120Hz 10bpc Unsafe
+318 - 800x450 HiDPI 100Hz 10bpc Unsafe
+319 - 800x450 HiDPI 60Hz 10bpc Unsafe
+320 - 800x450 HiDPI 50Hz 10bpc Unsafe
+321 - 800x450 HiDPI 30Hz 10bpc Unsafe
+322 - 800x450 HiDPI 25Hz 10bpc Unsafe
+323 - 800x450 HiDPI 24Hz 10bpc Unsafe
+324 - 960x540 HiDPI 120Hz 10bpc Unsafe
+325 - 960x540 HiDPI 100Hz 10bpc Unsafe
+326 - 960x540 HiDPI 60Hz 10bpc Unsafe
+327 - 960x540 HiDPI 50Hz 10bpc Unsafe
+328 - 960x540 HiDPI 30Hz 10bpc Unsafe
+329 - 960x540 HiDPI 25Hz 10bpc Unsafe
+330 - 960x540 HiDPI 24Hz 10bpc Unsafe
+331 - 1024x768 60Hz 10bpc Unsafe
+332 - 1280x720 HiDPI 120Hz 10bpc Unsafe
+333 - 1280x720 60Hz 10bpc Unsafe
+334 - 1280x720 50Hz 10bpc Unsafe
+335 - 1920x1080 120Hz 10bpc Unsafe
+336 - 1920x1080 100Hz 10bpc Unsafe
+337 - 1920x1080 60Hz 10bpc Unsafe
+338 - 1920x1080 50Hz 10bpc Unsafe
+339 - 1920x1080 30Hz 10bpc Unsafe
+340 - 1920x1080 25Hz 10bpc Unsafe
+341 - 1920x1080 24Hz 10bpc Unsafe
+342 - 2560x1440 120Hz 10bpc Unsafe
+
+Selecting listed non-HiDPI mode: 115
+set --displayModeNumber exit 0
+
+get --displayInformation exit 0
+Display Information
+BetterDisplay Version 5.0.6 Build 53700
+
+LG TV SSCR2 - Third-party external display - Connected
+
+Identifiers
+-----------
+Tag ID: 3
+Serial number: 1010101
+Vendor ID: 1E6D (GSM)
+Model ID: 01
+Product name: LG TV SSCR2
+Alphanumeric serial: n/a
+Year of manufacture: 2022
+Week of manufacture: 1
+UUID: 0A65EDC5-C030-4BD5-8B0C-3FFE1ECCDE42
+Dimensions (unrotated): 1625.60mm x 914.40mm
+Registry location: IOService:/AppleARMPE/arm-io/AppleT600xIO/dispext0@88000000/AppleCLCD2
+Metal device: Apple M1 Pro
+Platform: Apple silicon
+I2C service name: DCPAVServiceProxy
+DDC messaging: Standard
+CGDirectDisplayID: 2
+Configuration run ID: 116
+First added: 4. Oct 2026 at 19:32:57
+Last detected: 7. Oct 2026 at 23:31:10
+Last undetected: 7. Oct 2026 at 22:13:49
+
+Current (Alternate) Identifiers
+-------------------------------
+Serial number: 1010101
+Vendor ID: 1E6D (GSM)
+Model ID: 01
+Product name: LG TV SSCR2
+Alphanumeric serial: n/a
+Year of manufacture: 2022
+Week of manufacture: 1
+UUID: 0A65EDC5-C030-4BD5-8B0C-3FFE1ECCDE42
+
+Capabilities
+------------
+Software control: Yes
+Hardware control (Apple): No
+Colour table alteration capable: Yes
+Potentially DDC compatible: Yes
+Supports proper HiDPI: Yes
+Supports changing orientation: Yes
+Supports variable refresh rate: No
+Supports Apple Display Presets: No
+Supports Colour Profiles: Yes
+Supports HDR: Yes
+Current timing supports HDR: Yes
+Current scaling supports HDR: Yes
+HDR enabled: No
+XDR/HDR upscaling available: Yes
+Current EDR: 1.0
+Potential EDR: 1.0
+Reference EDR: 1.0
+Minimum HDR luminance: 0,01 nits
+Peak luminance: 1.020 nits
+Horizontal GPU resolution limit: 3840 pixels HiDPI (7680 pixels LoDPI)
+
+Current Display Mode
+--------------------
+Mode number: 115
+Logical width: 1920
+Logical height: 1080
+HiDPI: No
+Pixel width: 1920
+Pixel height: 1080
+Bits per sample: 10
+Samples per pixel: 3
+Bits per pixel: 32
+Pixel encoding: --RRRRRRRRRRGGGGGGGGGGBBBBBBBBBB\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+1:1 pixel mapped resolution: No
+Default resolution: No
+Refresh string: 120Hz
+Variable refresh rate: No
+Max refresh rate: 120
+Min refresh rate: 120
+Fixed-point refresh rate: 7.864.320 (interpreted as 120,000000)
+Row bytes: 7680
+Horizontal density: 30
+Vertical density: 30
+Flags: 00000003
+Unsafe mode: No
+Invalid mode: No
+
+Current Display Mode (Connection Level)
+---------------------------------------
+Description:  3840 x 2160 RGB 10bit full
+Dimensions: 3840 x 2160
+Refresh Rate: 119.99999731779099
+Variable Refresh Rate: No
+Bit Depth: 10 bits per sample
+Colour Mode: RGBFullRange
+YCbCr: No
+HDR/SDR Mode: SDR
+Colour Gamut: gamut_SRGB
+Virtual: No
+Pixel Aspect Ratio: 1.0
+Preferred Scale: 2
+
+Preferred Display Mode (Connection Level)
+-----------------------------------------
+Description:  3840 x 2160 RGB 10bit full
+Dimensions: 3840 x 2160
+Refresh Rate: 59.99999865889549
+Variable Refresh Rate: No
+Bit Depth: 10 bits per sample
+Colour Mode: RGBFullRange
+YCbCr: No
+HDR/SDR Mode: SDR
+Colour Gamut: gamut_SRGB
+Virtual: No
+Pixel Aspect Ratio: 1.0
+Preferred Scale: 2
+
+Link Information
+----------------
+Estimated uncompressed payload: 29,86 Gbps
+Display Stream Compression (DSC): Yes
+Estimated compressed payload: 15,93 Gbps
+Estimated compression ratio: 1,88:1
+Connection type: DisplayPort
+Transmission mode: HBR3
+Link rate: 8,10 Gbps/lane
+Lane count: 4
+Raw link bandwidth: 32,40 Gbps
+Effective link bandwidth: 25,92 Gbps
+Link encoding: 8b/10b
+HDCP support: HDCP 1.x, HDCP 2.x
+Data source: DisplayPort branch device
+DSC version: 1.2
+DSC bits per component: 10
+DSC line buffer depth: 11
+DSC target bits per pixel: 16,00
+DSC picture size: 3840 x 2160
+DSC slice size: 960 x 2160
+DSC chunk size: 1920 bytes
+
+Sidecar Configuration
+---------------------
+Name: LG TV SSCR2
+Sidecar UUID: n/a
+State: Unknown
+
+Colour Profile Configuration
+----------------------------
+Device Class: mntr
+Device Description: LG TV SSCR2
+Device Host Scope: kCFPreferencesCurrentHost
+Device ID: <CFUUID 0x993f0d8e0> 0A65EDC5-C030-4BD5-8B0C-3FFE1ECCDE42
+Device User Scope: kCFPreferencesAnyUser
+Factory Profiles / 1 / Device Mode Description: LG TV SSCR2
+Factory Profiles / 1 / Device Profile URL: file:///Library/ColorSync/Profiles/Displays/LG%20TV%20SSCR2-0A65EDC5-C030-4BD5-8B0C-3FFE1ECCDE42.icc
+Factory Profiles / Device Default Profile ID: 1
+
+Display Information
+-------------------
+Display Supports Rotation: 1 (Yes)
+Display Is Exclusive: 0 (No)
+Display Horizontal Image Size: 1.600
+Display Supports Dynamic Geometry: 0 (No)
+Display Blue Point X: 0.1503906
+Display Product ID: 1 (Yes)
+Display Year Manufacture: 2.022
+Display Is Virtual Device: 0 (No)
+Display Blue Point Y: 0.05957031
+Slope Limit Gamma: 1 (Yes)
+Display-icon: public.display
+Display UUID: 0A65EDC5-C030-4BD5-8B0C-3FFE1ECCDE42
+Display Transport Type: 1 (Yes)
+Display Is Air Play: 0 (No)
+Display Product Name / Hr_ HR: LG TV SSCR2
+Display Product Name / Ko_ KR: LG TV SSCR2
+Display Product Name / Nb_ NO: LG TV SSCR2
+Display Product Name / Id: LG TV SSCR2
+Display Product Name / Hu_ HU: LG TV SSCR2
+Display Product Name / Cs_ CZ: LG TV SSCR2
+Display Product Name / Sl_ SI: LG TV SSCR2
+Display Product Name / Da_ DK: LG TV SSCR2
+Display Product Name / Uk_ UA: LG TV SSCR2
+Display Product Name / Fr_ CA: LG TV SSCR2
+Display Product Name / It_ IT: LG TV SSCR2
+Display Product Name / Zh_ TW: LG TV SSCR2
+Display Product Name / Ar: LG TV SSCR2
+Display Product Name / He_ IL: LG TV SSCR2
+Display Product Name / Es_ ES: LG TV SSCR2
+Display Product Name / Nl_ NL: LG TV SSCR2
+Display Product Name / Fi_ FI: LG TV SSCR2
+Display Product Name / Ro_ RO: LG TV SSCR2
+Display Product Name / Vi_ VN: LG TV SSCR2
+Display Product Name / Sk_ SK: LG TV SSCR2
+Display Product Name / Zh_ CN: LG TV SSCR2
+Display Product Name / Ru_ RU: LG TV SSCR2
+Display Product Name / En_ GB: LG TV SSCR2
+Display Product Name / Fr_ FR: LG TV SSCR2
+Display Product Name / Ms: LG TV SSCR2
+Display Product Name / Hi_ IN: LG TV SSCR2
+Display Product Name / Th_ TH: LG TV SSCR2
+Display Product Name / Ca_ ES: LG TV SSCR2
+Display Product Name / Es_ XL: LG TV SSCR2
+Display Product Name / En_ AU: LG TV SSCR2
+Display Product Name / De_ DE: LG TV SSCR2
+Display Product Name / En_ US: LG TV SSCR2
+Display Product Name / Pt_ BR: LG TV SSCR2
+Display Product Name / Pl_ PL: LG TV SSCR2
+Display Product Name / El_ GR: LG TV SSCR2
+Display Product Name / Sv_ SE: LG TV SSCR2
+Display Product Name / Tr_ TR: LG TV SSCR2
+Display Product Name / Ja_ JP: LG TV SSCR2
+Display Product Name / Pt_ PT: LG TV SSCR2
+Display Green Point X: 0.2998047
+Display Vertical Image Size: 900
+Display White Gamma: 2.199997
+Display Is SLVD Exclusive: 0 (No)
+Display Serial Number: 16.843.009
+Display Pixel Width: 3.840
+Display Week Manufacture: 1 (Yes)
+Display Green Point Y: 0.5996094
+IO Display Is Digital: 1 (Yes)
+IO Display Location: IOService:/AppleARMPE/arm-io/AppleT600xIO/dispext0@88000000/AppleCLCD2
+Display Pixel Height: 2.160
+Display ID: 2
+Display White Point X: 0.3125
+Display Is Presentation Display: 1 (Yes)
+Display Is Presentation Mode Enabled: 0 (No)
+Display DPI Cutoff: 300
+Display Vendor ID: 7.789
+Display CA Device Name: external-0
+Display Dynamic Geometry Enabled: 0 (No)
+Display White Point Y: 0.3291016
+Display Is DFR: 0 (No)
+Display Supports Underscan: 0 (No)
+Display Red Point X: 0.6396484
+Display Bundle URL: /System/Library/Displays
+Display Red Point Y: 0.3300781
+Aspect Ratio: 15
+Backlight Luminance Min: 4.915.200
+Chromaticity / Blue / X: 9.856
+Chromaticity / Blue / Y: 3.904
+Chromaticity / Green / X: 19.648
+Chromaticity / Green / Y: 39.296
+Chromaticity / Red / X: 41.920
+Chromaticity / Red / Y: 21.632
+Continuous Frequency Support: CVTv1X
+Default Color Space Is SRGB: 0 (No)
+Default White Point / Gamma: 144.179
+Default White Point / X: 20.480
+Default White Point / Y: 21.568
+Dolby Vision Chromaticity / Blue / X: 9.984
+Dolby Vision Chromaticity / Blue / Y: 2.816
+Dolby Vision Chromaticity / Green / X: 16.128
+Dolby Vision Chromaticity / Green / Y: 43.520
+Dolby Vision Chromaticity / Red / X: 44.288
+Dolby Vision Chromaticity / Red / Y: 20.224
+Dolby Vision DM Version: 64
+Dolby Vision Global Dimming: 0 (No)
+Dolby Vision Luminance / Max: 67.968.107
+Dolby Vision Luminance / Min: 543
+Dolby Vision Supports 2160p 60 Hz: 1 (Yes)
+Dolby Vision White Point / X: 20.493
+Dolby Vision White Point / Y: 21.561
+Has HDMI Legacy EDID: 0 (No)
+Luminance / Max: 67.968.107
+Luminance / Min: 543
+Max Horizontal Image Size: 160
+Max Vertical Image Size: 90
+Maximum Refresh Rate: 120
+Maximum Variable Refresh Rate: 7.864.320
+Minimum Refresh Rate: 48
+Minimum Variable Refresh Rate: 3.145.728
+Native Format Horizontal Pixels: 3.840
+Native Format Vertical Pixels: 2.160
+Port ID: 32
+Precise Aspect Ratio: 116.508
+Product Attributes /  Product ID: 1 (Yes)
+Product Attributes /  Week Of Manufacture: 1 (Yes)
+Product Attributes / Legacy Manufacturer ID: 7.789
+Product Attributes / Manufacturer ID: GSM
+Product Attributes / Product Name: LG TV SSCR2
+Product Attributes / Serial Number: 16.843.009
+Product Attributes / Year Of Manufacture: 2.022
+Supports Active Off: 0 (No)
+Supports BT 2020 RGB: 512
+Supports BT 2020 YCC: 128
+Supports BT 2020c YCC: 0 (No)
+Supports Backlight Control: 0 (No)
+Supports Discrete Media Refresh Rate: 0 (No)
+Supports HDR Gamma EOTF: 0 (No)
+Supports HDR Static Metadata Type 1: 1 (Yes)
+Supports HLGEOTF: 1 (Yes)
+Supports PQEOTF: 1 (Yes)
+Supports Standby: 0 (No)
+Supports Suspend: 0 (No)
+Supports Variable Refresh Rate: 0 (No)
+Variable Refresh Rate Requires Ramp Rate Limits: 0 (No)
+White Points - 1 / Gamma: 144.179
+White Points - 1 / X: 20.480
+White Points - 1 / Y: 21.568
+Bounds: NSRect: {{0, 0}, {1920, 1080}}
+Cloned: 0 (No)
+Cloning: 0 (No)
+Cloning Supported: 0 (No)
+Connection Seed: 83
+Container Id: 
+Current Orientation: rot0
+Device Name: external-0
+Display Id: 2
+Display Type: 1 (Yes)
+External: 1 (Yes)
+External Display Attributes / Bt 2020 YCC: 2
+External Display Attributes / Dolby Vision: 2
+External Display Attributes / Hdr Static Metadata Type 1: 2
+External Display Attributes / Legacy HDMIEDID: 0 (No)
+External Display Attributes / Manufacturer ID: 7.789
+External Display Attributes / Pq EOTF: 2
+External Display Attributes / Product ID: 1 (Yes)
+External Display Attributes / Serial Number: 16.843.009
+External Display Attributes / Week Of Manufacture: 1 (Yes)
+External Display Attributes / Year Of Manufacture: 2.022
+Frame: NSRect: {{0, 0}, {3840, 2160}}
+Has Native Frame Rate Request: 0 (No)
+Heartbeat Rate: 0.008333333333333333
+Is Reference: 0 (No)
+Is Reference Limited: 0 (No)
+Latency: 0 (No)
+Link Quality: -1
+Logical Scale: NSSize: {0.5, 0.5}
+Maximum Logical Scale: 2
+Minimum Frame Duration: 1 (Yes)
+Minimum Logical Scale: 0.25
+Name: External
+Native Orientation: rot0
+Native Size: NSSize: {3840, 2160}
+Od LUT Version: 0 (No)
+Overscan Adjustment: none
+Overscan Amount: 0.8999999761581421
+Overscan Amounts: NSSize: {0.89999997615814209, 0.89999997615814209}
+Overscanned: 0 (No)
+Physical Size: NSSize: {62.99212646484375, 35.433071136474609}
+Point Scale: 1 (Yes)
+Process Id: 0 (No)
+Product Name: LG TV SSCR2
+Refresh Rate: 0.008333333333333333
+Safe Bounds: NSRect: {{0, 0}, {1920, 1080}}
+Seed: 217
+Supported: 1 (Yes)
+Supports Extended Colors: 0 (No)
+Tag: 0 (No)
+Transport Type: dp
+Unique Id: 1E6D0100-0000-0000-0120-010485A05A78
+
+
+
+CAC-Mac-Typ-RAM — two-byte volatile test
+Reply cmd=01 request=00000000: 01 00 2C B4 01 01 00 05 00 00 00 05 00 00 00 50 52 49 55 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=30 request=00004000: 01 00 2C B4 01 30 00 04 40 00 00 04 00 00 00 07 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 D6 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=31 request=90000217: 01 00 2C B4 01 31 00 18 02 00 90 01 00 00 00 48 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 31 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=31 request=9000025B: 01 00 2C B4 01 31 00 5C 02 00 90 01 00 00 00 02 02 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 33 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=21 request=90000217: 01 00 2C B4 01 21 00 18 02 00 90 01 00 00 00 08 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 83 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=31 request=90000217: 01 00 2C B4 01 31 00 18 02 00 90 01 00 00 00 08 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 73 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+VERIFIED RAM 90000217 = 08
+Reply cmd=21 request=9000025B: 01 00 2C B4 01 21 00 5C 02 00 90 01 00 00 00 0A 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3D 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Reply cmd=31 request=9000025B: 01 00 2C B4 01 31 00 5C 02 00 90 01 00 00 00 0A 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2D 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+VERIFIED RAM 9000025B = 0A
+Reply cmd=02 request=00000000: 01 00 2C B4 00 02 00 00 00 00 00 00 00 00 00 00 00 74 00 53 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+set --autoApplyCustomEDID exit 0
+
+perform --applyFactoryEDID exit 0
+
+set --customEDID exit 0
+
+get --osEDID exit 0
+AP///////wAebQEAAQEBAQEgAQSFoFp4Cu6Ro1RMmSYPUFShCAAxQEVAYUBxQIGA0cABAQEBCOgAMPJwWoCwWIoAQIRjAAAeb8IAoKCgVVAwIDUAQIRjAAAeAAAA/QAYeB7/dwAKICAgICAgAAAA/ABMRyBUViBTU0NSMgogAeUCA13xXWFgdnVmZdvaEB8EEwUUAwISICEiFV1eX2JjZD9AIwlXB24DDABAALhELACAAQIDBG3YXcQBeIBrAjB4wzMF4gDP4wXAAOMGDQHiD//rAUbQAEgihn5Ub3sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHg==
+
+RESTORED: RAM helper succeeded; original OS EDID verified; custom EDID cleared; auto-apply off.
+Traceback (most recent call last):
+  File "/Users/USER/Documents/Codex/2026-10-07/referenced-chatgpt-conversation-this-is-an/outputs/CAC-Mac-1080-Test.py", line 114, in <module>
+    if '1920 x 1080' not in connection:raise RuntimeError('Physical 1080p signal not confirmed; no conclusion about DSC')
+RuntimeError: Physical 1080p signal not confirmed; no conclusion about DSC
+
+Test process exit: 1

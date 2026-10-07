@@ -7,3 +7,7 @@ A tested workaround for the Club 3D CAC-2505 USB-C → HDMI adapter running Appl
 Confirmed on 7 October 2026 with an LG 65QNED869QA: 3840×2160 at 120 Hz with HDR, VRR ON, changing TV FPS and a stable picture. Automatic activation was verified after reconnecting in Desktop and Gaming modes and after rebooting into Gaming Mode.
 
 The current helper deliberately accepts only firmware 7.02.116 and the tested LG EDID identity. It is not a universal patch for every TV or CAC-2505 firmware. macOS VRR is not solved by this package. Firmware binaries are not included: obtain the matching Apple/4K120 firmware from Club 3D support; this repository provides no flashing tool.
+
+## macOS investigation
+
+[macos/](macos/README.md) preserves the experimental Mac work, diagnosis scripts and handoff. macOS VRR recognition was achieved after a physical HDMI hotplug, but selecting the variable rate caused signal loss. **Stable macOS VRR remains unresolved.** See [the handoff](macos/HANDOFF.md) before continuing.

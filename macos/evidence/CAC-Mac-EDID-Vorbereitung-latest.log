@@ -1,0 +1,366 @@
+=== Read-only customEDID ===
+Exit: 1
+Failed.
+
+=== Read-only autoApplyCustomEDID ===
+Exit: 0
+off
+
+=== Read-only osEDID ===
+Exit: 0
+AP///////wAebQEAAQEBAQEgAQSFoFp4Cu6Ro1RMmSYPUFShCAAxQEVAYUBxQIGA0cABAQEBCOgAMPJwWoCwWIoAQIRjAAAeb8IAoKCgVVAwIDUAQIRjAAAeAAAA/QAYeB7/dwAKICAgICAgAAAA/ABMRyBUViBTU0NSMgogAeUCA13xXWFgdnVmZdvaEB8EEwUUAwISICEiFV1eX2JjZD9AIwlXB24DDABAALhELACAAQIDBG3YXcQBeIBrAjB4wzMF4gDP4wXAAOMGDQHiD//rAUbQAEgihn5Ub3sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHg==
+
+=== Read-only i2cEDID ===
+Exit: 0
+AP///////wAebQEAAQEBAQEgAQSFoFp4Cu6Ro1RMmSYPUFShCAAxQEVAYUBxQIGA0cABAQEBCOgAMPJwWoCwWIoAQIRjAAAeb8IAoKCgVVAwIDUAQIRjAAAeAAAA/QAYeB7/dwAKICAgICAgAAAA/ABMRyBUViBTU0NSMgogAeUCA13xXWFgdnVmZdvaEB8EEwUUAwISICEiFV1eX2JjZD9AIwlXB24DDABAALhELACAAQIDBG3YXcQBeIBrAjB4wzMF4gDP4wXAAOMGDQHiD//rAUbQAEgihn5Ub3sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHg==
+
+=== Read-only displayInformation ===
+Exit: 0
+Display Information
+BetterDisplay Version 5.0.6 Build 53700
+
+LG TV SSCR2 - Third-party external display - Connected
+
+Identifiers
+-----------
+Tag ID: 3
+Serial number: 1010101
+Vendor ID: 1E6D (GSM)
+Model ID: 01
+Product name: LG TV SSCR2
+Alphanumeric serial: n/a
+Year of manufacture: 2022
+Week of manufacture: 1
+UUID: 0A65EDC5-C030-4BD5-8B0C-3FFE1ECCDE42
+Dimensions (unrotated): 1598.95mm x 899.41mm
+Registry location: IOService:/AppleARMPE/arm-io/AppleT600xIO/dispext0@88000000/AppleCLCD2
+Metal device: Apple M1 Pro
+Platform: Apple silicon
+I2C service name: DCPAVServiceProxy
+DDC messaging: Standard
+CGDirectDisplayID: 2
+Configuration run ID: 101
+First added: 4. Oct 2026 at 19:32:57
+Last detected: 7. Oct 2026 at 23:15:08
+Last undetected: 7. Oct 2026 at 22:13:49
+
+Capabilities
+------------
+Software control: Yes
+Hardware control (Apple): No
+Colour table alteration capable: Yes
+Potentially DDC compatible: Yes
+Supports proper HiDPI: Yes
+Supports changing orientation: Yes
+Supports variable refresh rate: No
+Supports Apple Display Presets: No
+Supports Colour Profiles: Yes
+Supports HDR: Yes
+Current timing supports HDR: Yes
+Current scaling supports HDR: Yes
+HDR enabled: Native
+XDR/HDR upscaling available: Yes
+Current EDR: 1.0
+Potential EDR: 10.371109962463379
+Reference EDR: 1.0
+Minimum HDR luminance: 0,01 nits
+Peak luminance: 1.020 nits
+Horizontal GPU resolution limit: 3840 pixels HiDPI (7680 pixels LoDPI)
+
+Current Display Mode
+--------------------
+Mode number: 217
+Logical width: 3840
+Logical height: 2160
+HiDPI: No
+Pixel width: 3840
+Pixel height: 2160
+Bits per sample: 10
+Samples per pixel: 3
+Bits per pixel: 32
+Pixel encoding: --RRRRRRRRRRGGGGGGGGGGBBBBBBBBBB\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+1:1 pixel mapped resolution: Yes
+Default resolution: No
+Refresh string: 120Hz
+Variable refresh rate: No
+Max refresh rate: 120
+Min refresh rate: 120
+Fixed-point refresh rate: 7.864.320 (interpreted as 120,000000)
+Row bytes: 15360
+Horizontal density: 61
+Vertical density: 61
+Flags: 02000003
+Unsafe mode: No
+Invalid mode: No
+
+Current Display Mode (Connection Level)
+---------------------------------------
+Description:  3840 x 2160 RGB PQ 12bit full
+Dimensions: 3840 x 2160
+Refresh Rate: 119.99999731779099
+Variable Refresh Rate: No
+Bit Depth: 12 bits per sample
+Colour Mode: HDR10_RGBFullRange
+YCbCr: No
+HDR/SDR Mode: HDR10
+Colour Gamut: gamut_P3
+Virtual: No
+Pixel Aspect Ratio: 1.0
+Preferred Scale: 2
+
+Preferred Display Mode (Connection Level)
+-----------------------------------------
+Description:  3840 x 2160 RGB 10bit full
+Dimensions: 3840 x 2160
+Refresh Rate: 59.99999865889549
+Variable Refresh Rate: No
+Bit Depth: 10 bits per sample
+Colour Mode: RGBFullRange
+YCbCr: No
+HDR/SDR Mode: SDR
+Colour Gamut: gamut_P3
+Virtual: No
+Pixel Aspect Ratio: 1.0
+Preferred Scale: 2
+
+Link Information
+----------------
+Estimated uncompressed payload: 35,83 Gbps
+Display Stream Compression (DSC): Yes
+Estimated compressed payload: 15,93 Gbps
+Estimated compression ratio: 2,25:1
+Connection type: DisplayPort
+Transmission mode: HBR3
+Link rate: 8,10 Gbps/lane
+Lane count: 4
+Raw link bandwidth: 32,40 Gbps
+Effective link bandwidth: 25,92 Gbps
+Link encoding: 8b/10b
+HDCP support: HDCP 1.x, HDCP 2.x
+Data source: DisplayPort branch device
+DSC version: 1.2
+DSC bits per component: 12
+DSC line buffer depth: 13
+DSC target bits per pixel: 16,00
+DSC picture size: 3840 x 2160
+DSC slice size: 960 x 2160
+DSC chunk size: 1920 bytes
+
+Sidecar Configuration
+---------------------
+Name: LG TV SSCR2
+Sidecar UUID: n/a
+State: Unknown
+
+Colour Profile Configuration
+----------------------------
+Device Class: mntr
+Device Description: LG TV SSCR2
+Device Host Scope: kCFPreferencesCurrentHost
+Device ID: <CFUUID 0x993f0d8e0> 0A65EDC5-C030-4BD5-8B0C-3FFE1ECCDE42
+Device User Scope: kCFPreferencesAnyUser
+Factory Profiles / 1 / Device Mode Description: LG TV SSCR2
+Factory Profiles / 1 / Device Profile URL: file:///Library/ColorSync/Profiles/Displays/LG%20TV%20SSCR2-0A65EDC5-C030-4BD5-8B0C-3FFE1ECCDE42.icc
+Factory Profiles / Device Default Profile ID: 1
+
+Display Information
+-------------------
+Display Supports Rotation: 1 (Yes)
+Display Is Exclusive: 0 (No)
+Display Horizontal Image Size: 1.600
+Display Supports Dynamic Geometry: 0 (No)
+Display Blue Point X: 0.131
+Display Product ID: 1 (Yes)
+Display Year Manufacture: 2.022
+Display Is Virtual Device: 0 (No)
+Display Blue Point Y: 0.046
+Slope Limit Gamma: 1 (Yes)
+Display-icon: public.display
+Display UUID: 0A65EDC5-C030-4BD5-8B0C-3FFE1ECCDE42
+Display Transport Type: 1 (Yes)
+Display Is Air Play: 0 (No)
+Display Product Name / Hr_ HR: LG TV SSCR2
+Display Product Name / Ko_ KR: LG TV SSCR2
+Display Product Name / Nb_ NO: LG TV SSCR2
+Display Product Name / Id: LG TV SSCR2
+Display Product Name / Hu_ HU: LG TV SSCR2
+Display Product Name / Cs_ CZ: LG TV SSCR2
+Display Product Name / Sl_ SI: LG TV SSCR2
+Display Product Name / Da_ DK: LG TV SSCR2
+Display Product Name / Uk_ UA: LG TV SSCR2
+Display Product Name / Fr_ CA: LG TV SSCR2
+Display Product Name / It_ IT: LG TV SSCR2
+Display Product Name / Zh_ TW: LG TV SSCR2
+Display Product Name / Ar: LG TV SSCR2
+Display Product Name / He_ IL: LG TV SSCR2
+Display Product Name / Es_ ES: LG TV SSCR2
+Display Product Name / Nl_ NL: LG TV SSCR2
+Display Product Name / Fi_ FI: LG TV SSCR2
+Display Product Name / Ro_ RO: LG TV SSCR2
+Display Product Name / Vi_ VN: LG TV SSCR2
+Display Product Name / Sk_ SK: LG TV SSCR2
+Display Product Name / Zh_ CN: LG TV SSCR2
+Display Product Name / Ru_ RU: LG TV SSCR2
+Display Product Name / En_ GB: LG TV SSCR2
+Display Product Name / Fr_ FR: LG TV SSCR2
+Display Product Name / Ms: LG TV SSCR2
+Display Product Name / Hi_ IN: LG TV SSCR2
+Display Product Name / Th_ TH: LG TV SSCR2
+Display Product Name / Ca_ ES: LG TV SSCR2
+Display Product Name / Es_ XL: LG TV SSCR2
+Display Product Name / En_ AU: LG TV SSCR2
+Display Product Name / De_ DE: LG TV SSCR2
+Display Product Name / En_ US: LG TV SSCR2
+Display Product Name / Pt_ BR: LG TV SSCR2
+Display Product Name / Pl_ PL: LG TV SSCR2
+Display Product Name / El_ GR: LG TV SSCR2
+Display Product Name / Sv_ SE: LG TV SSCR2
+Display Product Name / Tr_ TR: LG TV SSCR2
+Display Product Name / Ja_ JP: LG TV SSCR2
+Display Product Name / Pt_ PT: LG TV SSCR2
+Display Green Point X: 0.17
+Display Vertical Image Size: 900
+Display White Gamma: 2.2
+Display Is SLVD Exclusive: 0 (No)
+Display Serial Number: 16.843.009
+Display Pixel Width: 3.840
+Display Week Manufacture: 1 (Yes)
+Display Green Point Y: 0.797
+IO Display Is Digital: 1 (Yes)
+IO Display Location: IOService:/AppleARMPE/arm-io/AppleT600xIO/dispext0@88000000/AppleCLCD2
+Display Pixel Height: 2.160
+Display ID: 2
+Display White Point X: 0.3127
+Display Is Presentation Display: 1 (Yes)
+Display Is Presentation Mode Enabled: 0 (No)
+Display DPI Cutoff: 300
+Display Vendor ID: 7.789
+Display CA Device Name: external-0
+Display Dynamic Geometry Enabled: 0 (No)
+Display White Point Y: 0.329
+Display Is DFR: 0 (No)
+Display Supports Underscan: 0 (No)
+Display Red Point X: 0.708
+Display Bundle URL: /System/Library/Displays
+Display Red Point Y: 0.292
+Aspect Ratio: 15
+Backlight Luminance Min: 4.915.200
+Chromaticity / Blue / X: 9.856
+Chromaticity / Blue / Y: 3.904
+Chromaticity / Green / X: 19.648
+Chromaticity / Green / Y: 39.296
+Chromaticity / Red / X: 41.920
+Chromaticity / Red / Y: 21.632
+Continuous Frequency Support: None
+Default Color Space Is SRGB: 0 (No)
+Default White Point / Gamma: 144.179
+Default White Point / X: 20.480
+Default White Point / Y: 21.568
+Dolby Vision Chromaticity / Blue / X: 9.984
+Dolby Vision Chromaticity / Blue / Y: 2.816
+Dolby Vision Chromaticity / Green / X: 16.128
+Dolby Vision Chromaticity / Green / Y: 43.520
+Dolby Vision Chromaticity / Red / X: 44.288
+Dolby Vision Chromaticity / Red / Y: 20.224
+Dolby Vision DM Version: 64
+Dolby Vision Global Dimming: 0 (No)
+Dolby Vision Luminance / Max: 67.968.107
+Dolby Vision Luminance / Min: 543
+Dolby Vision Supports 2160p 60 Hz: 1 (Yes)
+Dolby Vision White Point / X: 20.493
+Dolby Vision White Point / Y: 21.561
+Has HDMI Legacy EDID: 0 (No)
+Luminance / Max: 67.968.107
+Luminance / Min: 543
+Max Horizontal Image Size: 160
+Max Vertical Image Size: 90
+Maximum Refresh Rate: 120
+Maximum Variable Refresh Rate: 7.864.320
+Minimum Refresh Rate: 24
+Minimum Variable Refresh Rate: 1.572.864
+Native Format Horizontal Pixels: 3.840
+Native Format Vertical Pixels: 2.160
+Port ID: 32
+Precise Aspect Ratio: 116.508
+Product Attributes /  Product ID: 1 (Yes)
+Product Attributes /  Week Of Manufacture: 1 (Yes)
+Product Attributes / Legacy Manufacturer ID: 7.789
+Product Attributes / Manufacturer ID: GSM
+Product Attributes / Product Name: LG TV SSCR2
+Product Attributes / Serial Number: 16.843.009
+Product Attributes / Year Of Manufacture: 2.022
+Supports Active Off: 0 (No)
+Supports BT 2020 RGB: 512
+Supports BT 2020 YCC: 128
+Supports BT 2020c YCC: 0 (No)
+Supports Backlight Control: 0 (No)
+Supports Discrete Media Refresh Rate: 0 (No)
+Supports HDR Gamma EOTF: 0 (No)
+Supports HDR Static Metadata Type 1: 1 (Yes)
+Supports HLGEOTF: 1 (Yes)
+Supports PQEOTF: 1 (Yes)
+Supports Standby: 0 (No)
+Supports Suspend: 0 (No)
+Supports Variable Refresh Rate: 0 (No)
+Variable Refresh Rate Requires Ramp Rate Limits: 0 (No)
+White Points - 1 / Gamma: 144.179
+White Points - 1 / X: 20.480
+White Points - 1 / Y: 21.568
+Bounds: NSRect: {{0, 0}, {3840, 2160}}
+Cloned: 0 (No)
+Cloning: 0 (No)
+Cloning Supported: 0 (No)
+Connection Seed: 61
+Container Id: 
+Current Orientation: rot0
+Device Name: external-0
+Display Id: 2
+Display Type: 1 (Yes)
+External: 1 (Yes)
+External Display Attributes / Bt 2020 YCC: 2
+External Display Attributes / Dolby Vision: 2
+External Display Attributes / Hdr Static Metadata Type 1: 2
+External Display Attributes / Legacy HDMIEDID: 0 (No)
+External Display Attributes / Manufacturer ID: 7.789
+External Display Attributes / Pq EOTF: 2
+External Display Attributes / Product ID: 1 (Yes)
+External Display Attributes / Serial Number: 16.843.009
+External Display Attributes / Week Of Manufacture: 1 (Yes)
+External Display Attributes / Year Of Manufacture: 2.022
+Frame: NSRect: {{0, 0}, {3840, 2160}}
+Has Native Frame Rate Request: 0 (No)
+Heartbeat Rate: 0.008333333333333333
+Is Reference: 0 (No)
+Is Reference Limited: 0 (No)
+Latency: 0 (No)
+Link Quality: -1
+Logical Scale: NSSize: {1, 1}
+Maximum Logical Scale: 2
+Minimum Frame Duration: 1 (Yes)
+Minimum Logical Scale: 0.25
+Name: External
+Native Orientation: rot0
+Native Size: NSSize: {3840, 2160}
+Od LUT Version: 0 (No)
+Overscan Adjustment: none
+Overscan Amount: 0.8999999761581421
+Overscan Amounts: NSSize: {0.89999997615814209, 0.89999997615814209}
+Overscanned: 0 (No)
+Physical Size: NSSize: {62.99212646484375, 35.433071136474609}
+Point Scale: 1 (Yes)
+Process Id: 0 (No)
+Product Name: LG TV SSCR2
+Refresh Rate: 0.008333333333333333
+Safe Bounds: NSRect: {{0, 0}, {3840, 2160}}
+Seed: 171
+Supported: 1 (Yes)
+Supports Extended Colors: 1 (Yes)
+Tag: 0 (No)
+Transport Type: dp
+Unique Id: 1E6D0100-0000-0000-0120-010485A05A78
+
+
+
+Read-only configuration capture complete; no RAM, EDID or display settings changed.
+
+Test process exit: 0

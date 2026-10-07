@@ -1,0 +1,93 @@
+[
+  {
+    "path": "/DisplayPort",
+    "key": "LaneCount",
+    "value": 0
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "LinkRate",
+    "value": 0
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "LinkRateDescription",
+    "value": "No Link"
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "MaxLaneCount",
+    "value": 4
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "BranchDeviceID",
+    "value": "SYNAq"
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "BranchDeviceOUI",
+    "value": {
+      "length": 3,
+      "hex": "90cc24",
+      "sha256": "b7dc0c3af734bb189b32bde53d96706c01159ae823c21fe7e521c1b3b5088eee"
+    }
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "EDID",
+    "value": {
+      "length": 256,
+      "hex": "00ffffffffffff001e6d0100010101010120010485a05a780aee91a3544c99260f5054a1080031404540614071408180d1c00101010108e80030f2705a80b0588a0040846300001e6fc200a0a0a055503020350040846300001e000000fd0018781eff77000a202020202020000000fc004c472054562053534352320a2001e502035df15d616076756665dbda101f04130514030212202122155d5e5f6263643f40230957076e030c004000b8442c0080010203046dd85dc40178806b023078c33305e200cfe305c000e3060d01e20fffeb0146d0004822867e546f7b000000000000000000000000000000000000000000000000000000000000000000001e",
+      "sha256": "bf2274a4e755af146ce21b7233a62898734c1b99475e641af8d9c29825f3db70"
+    }
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "EDIDChanged",
+    "value": true
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "LaneCount",
+    "value": 4
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "LinkRate",
+    "value": 4
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "LinkRateDescription",
+    "value": "8.1 Gbps (HBR3)"
+  },
+  {
+    "path": "/DisplayPort",
+    "key": "MaxLaneCount",
+    "value": 4
+  },
+  {
+    "path": "/DisplayPort/Metadata",
+    "key": "BranchDeviceID",
+    "value": "SYNAq"
+  },
+  {
+    "path": "/DisplayPort/Metadata",
+    "key": "BranchDeviceOUI",
+    "value": {
+      "length": 3,
+      "hex": "90cc24",
+      "sha256": "b7dc0c3af734bb189b32bde53d96706c01159ae823c21fe7e521c1b3b5088eee"
+    }
+  },
+  {
+    "path": "/DisplayPort/Metadata",
+    "key": "EDID",
+    "value": {
+      "length": 256,
+      "hex": "00ffffffffffff001e6d0100010101010120010485a05a780aee91a3544c99260f5054a1080031404540614071408180d1c00101010108e80030f2705a80b0588a0040846300001e6fc200a0a0a055503020350040846300001e000000fd0018781eff77000a202020202020000000fc004c472054562053534352320a2001e502035df15d616076756665dbda101f04130514030212202122155d5e5f6263643f40230957076e030c004000b8442c0080010203046dd85dc40178806b023078c33305e200cfe305c000e3060d01e20fffeb0146d0004822867e546f7b000000000000000000000000000000000000000000000000000000000000000000001e",
+      "sha256": "bf2274a4e755af146ce21b7233a62898734c1b99475e641af8d9c29825f3db70"
+    }
+  }
+]

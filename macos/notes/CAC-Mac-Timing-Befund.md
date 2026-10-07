@@ -1,0 +1,3 @@
+# Host timing regeneration with enabled adapter capabilities
+
+Before: SupportsVariableRefreshRate=false, continuous=None, range24–120,71 timing dictionaries all VRR0. During verified RAM48/02 and EDID override: support=false, continuous=CVTv1X, range48–120,73 timing dictionaries all VRR0. After confirmed restoration: original attributes and71 dictionaries. User reports stable picture with brief blackout, no VRR. EDID-derived attributes/timing lists were regenerated; cached DPCD freshness is not established. A bounded physical HDMI hotplug comparison while retaining USB-C power is prepared, using only known RAM writes.

@@ -1,2 +1,12 @@
 __pycache__/
 *.py[cod]
+
+# Generated Mac helpers, captures and logs
+macos/tools/CAC-Mac-Typ-RAM
+macos/tools/CAC-VRR-RAM-Test
+macos/tools/CAC-Mac-Baseline
+macos/tools/*.log
+macos/tools/*.json
+macos/tools/*.plist
+macos/tools/*-latest-path.txt
+macos/tools/CAC-Mac-Cache-*/

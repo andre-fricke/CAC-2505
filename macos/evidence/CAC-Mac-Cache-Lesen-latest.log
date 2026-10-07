@@ -1,0 +1,23 @@
+Read-only: osEDID
+Exit: 0
+Read-only: i2cEDID
+Exit: 0
+Read-only: displayInformation
+Exit: 0
+Read-only: connectionModeListAll
+Exit: 0
+Read-only: dpcdReport
+Exit: 0
+Read-only registry: IOMobileFramebuffer
+Exit: 0 bytes: 2640841
+Relevant properties: 163
+Read-only registry: IOPortTransportStateDisplayPort
+Exit: 0 bytes: 6828
+Relevant properties: 15
+Read-only registry: DCPAVServiceProxy
+Exit: 0 bytes: 3920
+Relevant properties: 0
+Read-only capture saved: /Users/USER/Documents/Codex/2026-10-07/referenced-chatgpt-conversation-this-is-an/outputs/CAC-Mac-Cache-20261007-234041
+No RAM, EDID or display settings changed.
+
+Test process exit: 0
