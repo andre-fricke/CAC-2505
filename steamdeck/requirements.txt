@@ -1,0 +1,2 @@
+# Python dependency; must be importable by /usr/bin/python3 as root.
+hidapi

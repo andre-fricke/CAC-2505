@@ -1,0 +1,33 @@
+active
+Oct 07 22:41:41 steamdeck systemd[1]: Started CAC-2505 volatile VRR configuration.
+Oct 07 22:41:41 steamdeck python3[1300]: CAC automatic helper started: exact firmware7.02.116 / LG identity only
+Oct 07 22:41:43 steamdeck python3[1300]: Waiting ten seconds for a settled adapter connection
+Oct 07 22:41:53 steamdeck python3[1300]: RC enabled, status 0
+Oct 07 22:41:53 steamdeck python3[1300]: 08
+Oct 07 22:41:53 steamdeck python3[1300]: RC enabled, status 0
+Oct 07 22:41:53 steamdeck python3[1300]: 0a
+Oct 07 22:41:53 steamdeck python3[1300]: RC enabled, status 0
+Oct 07 22:41:53 steamdeck python3[1300]: 02
+Oct 07 22:41:54 steamdeck python3[1300]: RC enabled, status 0
+Oct 07 22:41:54 steamdeck python3[1300]: 48
+Oct 07 22:41:57 steamdeck python3[1300]: Gaming VRR requested:
+Oct 07 22:41:57 steamdeck python3[1300]: Gaming 4K120/HDR must be selected once in Steam display settings; not forced by this helper.
+Oct 07 22:41:57 steamdeck python3[1300]: Activated gaming session; {"0x7": "c1", "0x80": "0bf01afe", "0x2214": "03", "0x3030": "01000000000089000000000306000000"}
+Oct 07 22:44:29 steamdeck kscreen-doctor[4411]: Taddaaa! Found mode "13" "3840x2160@120"
+Oct 07 22:44:29 steamdeck kscreen-doctor[4411]: Output 1 set mode "3840x2160@120"
+Oct 07 22:44:29 steamdeck python3[1300]: KDE: {"mode": "3840x2160@120", "hdr": true, "vrrPolicy": 1}
+Oct 07 22:44:29 steamdeck python3[1300]: Session switch: desktop
+Oct 07 22:44:46 steamdeck python3[1300]: USB adapter absent in three checks; volatile state discarded
+Oct 07 22:45:08 steamdeck python3[1300]: Waiting ten seconds for a settled adapter connection
+Oct 07 22:45:18 steamdeck python3[1300]: RC enabled, status 0
+Oct 07 22:45:18 steamdeck python3[1300]: 08
+Oct 07 22:45:18 steamdeck python3[1300]: RC enabled, status 0
+Oct 07 22:45:18 steamdeck python3[1300]: 0a
+Oct 07 22:45:18 steamdeck python3[1300]: RC enabled, status 0
+Oct 07 22:45:18 steamdeck python3[1300]: 02
+Oct 07 22:45:19 steamdeck python3[1300]: RC enabled, status 0
+Oct 07 22:45:19 steamdeck python3[1300]: 48
+Oct 07 22:45:22 steamdeck kscreen-doctor[6652]: Taddaaa! Found mode "13" "3840x2160@120"
+Oct 07 22:45:22 steamdeck kscreen-doctor[6652]: Output 1 set mode "3840x2160@120"
+Oct 07 22:45:22 steamdeck python3[1300]: KDE: {"mode": "3840x2160@120", "hdr": true, "vrrPolicy": 1}
+Oct 07 22:45:22 steamdeck python3[1300]: Activated desktop session; {"0x7": "c1", "0x80": "0bf01afe", "0x2214": "03", "0x3030": "01000000000091000000000308000000"}

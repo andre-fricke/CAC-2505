@@ -1,0 +1,19 @@
+[Unit]
+Description=CAC-2505 volatile VRR configuration
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -u /var/lib/cac2505-vrr/daemon.py
+ExecStopPost=/usr/bin/python3 -u /var/lib/cac2505-vrr/daemon.py --recover
+Restart=no
+TimeoutStopSec=40
+RuntimeDirectory=cac2505-vrr
+RuntimeDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=full
+ProtectHome=read-only
+
+[Install]
+WantedBy=multi-user.target

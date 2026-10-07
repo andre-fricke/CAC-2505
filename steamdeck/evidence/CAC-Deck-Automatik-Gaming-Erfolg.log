@@ -1,0 +1,17 @@
+Oct 07 22:31:17 steamdeck systemd[1]: Stopping CAC-2505 volatile VRR configuration...
+Oct 07 22:31:17 steamdeck systemd[1]: cac2505-vrr.service: Deactivated successfully.
+Oct 07 22:31:17 steamdeck systemd[1]: Stopped CAC-2505 volatile VRR configuration.
+Oct 07 22:31:17 steamdeck systemd[1]: cac2505-vrr.service: Consumed 4.837s CPU time over 5min 15.373s wall clock time, 15.2M memory peak.
+Oct 07 22:31:17 steamdeck systemd[1]: Started CAC-2505 volatile VRR configuration.
+Oct 07 22:31:17 steamdeck python3[28860]: CAC automatic helper started: exact firmware7.02.116 / LG identity only
+Oct 07 22:31:18 steamdeck python3[28860]: RC enabled, status 0
+Oct 07 22:31:18 steamdeck python3[28860]: 08
+Oct 07 22:31:18 steamdeck python3[28860]: RC enabled, status 0
+Oct 07 22:31:18 steamdeck python3[28860]: 0a
+Oct 07 22:31:18 steamdeck python3[28860]: RC enabled, status 0
+Oct 07 22:31:18 steamdeck python3[28860]: 02
+Oct 07 22:31:18 steamdeck python3[28860]: RC enabled, status 0
+Oct 07 22:31:18 steamdeck python3[28860]: 48
+Oct 07 22:31:22 steamdeck python3[28860]: Gaming VRR requested:
+Oct 07 22:31:22 steamdeck python3[28860]: Gaming 4K120/HDR must be selected once in Steam display settings; not forced by this helper.
+Oct 07 22:31:22 steamdeck python3[28860]: Activated gaming session; {"0x7": "c1", "0x80": "0bf01afe", "0x2214": "03", "0x3030": "010000000000a100000000030a000000"}
