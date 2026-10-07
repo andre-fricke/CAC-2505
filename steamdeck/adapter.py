@@ -126,7 +126,7 @@ def main():
  if before['00007']!='81' or before['02214']!='00':raise RuntimeError('Unexpected baseline capabilities')
  if not Path(TRIGGER).is_file():raise RuntimeError('Missing trigger')
  print('Temporary test: RAM217 08->48 and RAM25B 0A->02; no flash write. Picture may disappear.',flush=True)
- if input('Type JA for a 20-second VRR Always test at current 4K120 HDR: ').strip()!='JA':
+ if input('Type YES for a 20-second VRR Always test at current 4K120 HDR: ').strip()!='YES':
   print('Cancelled; no RAM writes.');return
  # Independent process and new session: survives parent termination/SSH disconnect.
  log=open(LOG,'w')

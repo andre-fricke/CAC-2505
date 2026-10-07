@@ -40,7 +40,7 @@ sha256sum -c SHA256SUMS.txt
 sudo python3 install.py
 ```
 
-Review the printed description and type `JA` to install. The installer enables a boot service. Wait roughly 30 seconds for the picture to settle; a brief black screen during display detection is possible.
+Review the printed description and type `YES` to install. The installer enables a boot service. Wait roughly 30 seconds for the picture to settle; a brief black screen during display detection is possible.
 
 The service installs root-owned files under `/var/lib/cac2505-vrr` and its unit under `/etc/systemd/system/cac2505-vrr.service`. It refuses to overwrite an existing installation. No firmware, kernel or graphics driver is installed or modified.
 

@@ -25,7 +25,7 @@ for executable in ('kscreen-doctor','gamescopectl'):
 if not Path('/sys/kernel/debug/dri/0/DP-1/trigger_hotplug').exists():
  raise SystemExit('Missing DP-1 trigger_hotplug interface; see README.md')
 print('Install automatic volatile VRR helper for CAC-2505 firmware7.02.116 and LG TV. No flash or driver changes.')
-if input('Type JA to install and enable at boot: ').strip()!='JA':sys.exit('Cancelled')
+if input('Type YES to install and enable at boot: ').strip()!='YES':sys.exit('Cancelled')
 dst.mkdir(mode=0o700)
 for name in ('daemon.py','adapter.py'):
  target=dst/name;shutil.copyfile(src/name,target);target.chmod(0o600);os.chown(target,0,0)
