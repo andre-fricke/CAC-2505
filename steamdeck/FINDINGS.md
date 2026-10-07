@@ -31,3 +31,7 @@ The service polls for the exact adapter/TV identity, waits ten seconds for the c
 Gamescope's process name on the tested image is `gamescope-wl`; session ownership is determined from its real UID. `gamescopectl help` writes its controls to stderr, and unknown commands can return exit status zero. Both output streams are checked, including the known `Command not found.` error.
 
 Firmware binaries are intentionally excluded. The tested Apple fullrom SHA-256 was `8d4eb2e8473c1b3e88d18cfefaf5db6165ca20347bb4d676c043bc13e15fb73b`; the vendor supplied it directly. RAM offsets must not be treated as universally valid across other firmware versions.
+
+## Suspend/resume follow-up
+
+A short suspend initially disabled VRR while the helper still considered the connection active. The kernel logged a warning in `amdgpu_dm_handle_vrr_transition`. A duration-only detector with a one-second threshold missed a short sleep; the kernel suspend-success counter subsequently detected it. Recovery restored 08/0A, reapplied 02/48 and re-enabled session VRR. Desktop recovery completed at 22:58:14 and Gaming recovery at 23:00:27. The user observed VRR returning automatically in both tests. See the two suspend evidence logs. The warning does not establish why the Deck woke automatically.

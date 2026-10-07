@@ -94,6 +94,12 @@ This checks the manifest, stops the service, backs up the previous adapter/helpe
 
 ## Limits
 
-Verified: reconnect in both modes, Gaming → Desktop switch, Gaming autostart after reboot, stable picture and changing TV FPS. Suspend/resume, long-term stability, other TVs and future SteamOS versions remain untested. Small refresh-related brightness changes were observed on the tested TV; their cause was not established.
+Verified: reconnect in both modes, Gaming → Desktop switch, Gaming autostart after reboot, stable picture and changing TV FPS. Automatic VRR recovery after short suspend/resume was also verified in Desktop and Gaming modes. Long-term stability, other TVs and future SteamOS versions remain untested. Small refresh-related brightness changes were observed on the tested TV; their cause was not established.
 
 The checksums detect accidental changes to package files; they are not a signature or proof of publisher authenticity. Review root-executed scripts before installing. No third-party firmware binary or redistribution permission is supplied here.
+
+## Suspend/resume recovery
+
+The helper detects completed suspend cycles using the kernel suspend-success counter, with a BOOTTIME/MONOTONIC fallback. After resume it waits ten seconds and makes one recovery attempt: restore the owned RAM configuration, request detection, then activate again through the normal verified path. Allow about 30–40 seconds for VRR to return. This was verified in both modes on 7 October 2026.
+
+The tested Deck woke by itself within a few seconds while the adapter was connected. The cause of that separate wake behaviour remains unknown; this fix restores VRR after resume and does not prevent unwanted wake-ups. Prolonged sleep and repeated-cycle endurance are not yet verified.

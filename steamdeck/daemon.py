@@ -119,14 +119,39 @@ def stop(*args):
  global stopping
  stopping=True
 
+def suspend_count():
+ try:return int(Path("/sys/power/suspend_stats/success").read_text())
+ except (OSError,ValueError):return None
+
+def sleep_offset():
+ return time.clock_gettime(time.CLOCK_BOOTTIME)-time.monotonic()
+
 def main():
  global state,blocked,missing_hid
  if os.geteuid()!=0:raise SystemExit('Root service required')
  for sig in (signal.SIGINT,signal.SIGTERM):signal.signal(sig,stop)
+ sleep_mark=sleep_offset();suspend_mark=suspend_count()
  log('CAC automatic helper started: exact firmware7.02.116 / LG identity only')
  try:
   while not stopping:
    try:
+    current_sleep=sleep_offset()
+    current_suspend=suspend_count()
+    resumed=(current_suspend is not None and suspend_mark is not None and current_suspend>suspend_mark) or current_sleep-sleep_mark>0.05
+    sleep_mark=current_sleep;suspend_mark=current_suspend
+    if resumed:
+     log('Suspend/resume detected; waiting ten seconds before one recovery attempt')
+     for _ in range(50):
+      if stopping:break
+      time.sleep(.2)
+     if stopping:break
+     recovery_info=probe()
+     if state and recovery_info==state[0]:
+      # Restore known owned state, then follow normal verified activation.
+      restore(recovery_info)
+      state=None;blocked=None
+     elif state:
+      raise RuntimeError('Resume identity unavailable; recovery deferred to reconnect')
     info=probe();s=session()
     key=(info,s)
     if not info:
