@@ -6,7 +6,7 @@ Achieve stable real dynamic VRR on Mac → CAC-2505 → LG at4K120 HDR. Steam De
 
 ## Original workspace and repository
 
-Original working directory: `/Users/mainuser/Documents/Codex/2026-10-07/referenced-chatgpt-conversation-this-is-an`; all original tools/results in `outputs`, disassembled firmware and analysis in `work`. Repository: `/Users/mainuser/git/CAC-2505`, remote `git@github.com:andre-fricke/CAC-2505.git`, branch main. Raw broad IORegistry captures and binaries remain in original workspace; this folder includes relevant source and derived evidence.
+Original working directory: `<HOME>/Documents/Codex/2026-10-07/referenced-chatgpt-conversation-this-is-an`; all original tools/results in `outputs`, disassembled firmware and analysis in `work`. Repository: `<HOME>/git/CAC-2505`, remote `git@github.com:andre-fricke/CAC-2505.git`, branch main. Raw broad IORegistry captures and binaries remain in original workspace; this folder includes relevant source and derived evidence.
 
 ## Known hardware and firmware
 

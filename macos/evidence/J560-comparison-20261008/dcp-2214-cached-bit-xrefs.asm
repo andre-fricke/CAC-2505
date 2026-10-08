@@ -12,7 +12,7 @@ REFERENCE 000f9a50
 000f9a5c and        w0, w8, #1
 000f9a60 ldp        x29, x30, [sp, #0x10]
 000f9a64 ldp        x20, x19, [sp], #0x20
-000f9a68 retab      
+000f9a68 retab
 000f9a6c ldrb       w8, [x19, #0x52b]
 000f9a70 b          #0xf9a5c
 000f9a74 ldr        x0, [x0, #0x1c8]
@@ -29,7 +29,7 @@ REFERENCE 000fb0d4
 000fb0cc braa       x2, x16
 000fb0d0 and        w8, w1, #1
 000fb0d4 strb       w8, [x0, #0x525]
-000fb0d8 ret        
+000fb0d8 ret
 000fb0dc ldr        x0, [x0, #0x1c8]
 000fb0e0 ldr        x16, [x0]
 000fb0e4 mov        x17, x0
@@ -41,7 +41,7 @@ REFERENCE 000fb0d4
 000fb0fc movk       x16, #0x5575, lsl #48
 000fb100 braa       x3, x16
 000fb104 ldrb       w0, [x0, #0x525]
-000fb108 ret        
+000fb108 ret
 
 REFERENCE 000fb104
 000fb0ec autda      x16, x17
@@ -51,7 +51,7 @@ REFERENCE 000fb104
 000fb0fc movk       x16, #0x5575, lsl #48
 000fb100 braa       x3, x16
 000fb104 ldrb       w0, [x0, #0x525]
-000fb108 ret        
+000fb108 ret
 000fb10c mov        x2, x1
 000fb110 mov        x1, x0
 000fb114 ldr        x0, [x0, #0x1c8]
