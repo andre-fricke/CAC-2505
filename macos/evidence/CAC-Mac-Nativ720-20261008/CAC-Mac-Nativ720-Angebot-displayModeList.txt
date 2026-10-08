@@ -1,0 +1,38 @@
+0 - 800x600 HiDPI 48-60Hz 10bpc 
+1 - 800x600 HiDPI 60Hz 10bpc 
+2 - 800x600 48-60Hz 10bpc 
+3 - 800x600 60Hz 10bpc 
+4 - 960x540 HiDPI 48-60Hz 10bpc 
+5 - 960x540 HiDPI 60Hz 10bpc 
+6 - 1024x576 HiDPI 48-60Hz 10bpc 
+7 - 1024x576 HiDPI 60Hz 10bpc 
+8 - 1024x576 48-60Hz 10bpc 
+9 - 1024x576 60Hz 10bpc 
+10 - 1024x768 48-60Hz 10bpc 
+11 - 1024x768 60Hz 10bpc 
+12 - 1280x720 48-60Hz 10bpc Native 
+13 - 1280x720 60Hz 10bpc Current Default Native 
+14 - 1024x768 HiDPI 48-60Hz 10bpc 
+15 - 1024x768 HiDPI 60Hz 10bpc 
+16 - 1280x720 HiDPI 60Hz 10bpc 
+17 - 1280x720 HiDPI 48-60Hz 10bpc 
+18 - 1280x960 HiDPI 48-60Hz 10bpc 
+19 - 1280x960 HiDPI 60Hz 10bpc 
+20 - 400x300 HiDPI 48-60Hz 10bpc Unsafe
+21 - 400x300 HiDPI 60Hz 10bpc Unsafe
+22 - 512x384 HiDPI 48-60Hz 10bpc Unsafe
+23 - 512x384 HiDPI 60Hz 10bpc Unsafe
+24 - 640x360 HiDPI 48-60Hz 10bpc Native Unsafe
+25 - 640x360 HiDPI 60Hz 10bpc Native Unsafe
+26 - 640x360 48-60Hz 10bpc Unsafe
+27 - 640x360 60Hz 10bpc Unsafe
+28 - 640x480 HiDPI 48-60Hz 10bpc Unsafe
+29 - 640x480 HiDPI 60Hz 10bpc Unsafe
+30 - 640x480 48-60Hz 10bpc Unsafe
+31 - 640x480 60Hz 10bpc Unsafe
+32 - 672x378 HiDPI 48-60Hz 10bpc Unsafe
+33 - 672x378 HiDPI 60Hz 10bpc Unsafe
+34 - 672x504 HiDPI 48-60Hz 10bpc Unsafe
+35 - 672x504 HiDPI 60Hz 10bpc Unsafe
+36 - 800x450 HiDPI 48-60Hz 10bpc Unsafe
+37 - 800x450 HiDPI 60Hz 10bpc Unsafe

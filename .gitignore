@@ -10,3 +10,6 @@ macos/tools/*.json
 macos/tools/*.plist
 macos/tools/*-latest-path.txt
 macos/tools/CAC-Mac-Cache-*/
+
+macos/tools/CAC-Mac-Typ-RAM-Robust
+macos/tools/CAC-Mac-Port-Lesen

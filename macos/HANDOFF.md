@@ -58,3 +58,29 @@ BetterDisplay labels coarseDPCD5=1D reserved, but Linuxdrm_dp.h mask06 givesTMDS
 ## Latest continuation: post-hotplug snapshot completed
 
 The previously pending read-only command was executed. See `evidence/Post-hotplug-current/REPORT.md` and accompanying data. Confirmed RAM08/0A, auto-applyoff, identicalOS/I2CEDID with valid1.3/80 factoryheader and SHA256fcb048faa03baf2d3c106f2b0b1cd191df1557322022c94ab8c48b39488a57b0. macOSVRRsupport remainsTRUE, range48–120, continuousNone. Currentfixed4K60SDR8-bitYCbCr444limited,DSCNo. No further variable-rate attempt was performed. The previous next-step request to read the snapshot is now complete; proceed with safe fixed-mode-recovery-first diagnostic design. New factorybaseline must be explicitly backed up and validated, not silently substituted into older tests.
+
+
+## Update: 8 October 2026
+
+
+The adapter still runs the unmodified Apple firmware 7.02.116. No firmware or driver patch was installed.
+
+| Comparison | Verified physical signal | User observation |
+| --- | --- | --- |
+| System Settings Variable | 3840x2160, maximum 120 Hz, YCbCr420, 8-bit SDR, DSC enabled | No Signal |
+| Native 720p Variable | 1280x720, maximum 60 Hz, RGB, 10-bit SDR, DSC disabled | No Signal |
+| Compatible 720p Variable RGB8 | 1280x720, maximum 60 Hz, RGB, 8-bit SDR, DSC disabled | No Signal |
+
+The 720p RGB8 state was verified in two snapshots: Variable Refresh Rate Yes, DPCD 0x107=80, 0x160=00, DP lane status 77/77, alignment 01. HDMI 0x3036=00 and 0x303B=03; TX active/ready flags do not establish a visible valid image. Consequently, HDR, 10-bit color, DSC and 4K bandwidth are not individually necessary explanations for this failure. This does not exclude interactions at the target 4K120 HDR mode or diagnose the exact failed packet/timing path.
+
+A normal desktop resolution selection did not produce a physical 720p signal. A temporary host EDID override with native 720p was needed. Its preferred timing is 74.25 MHz, totals 1650x750, 60 Hz. It retains actual HDMI Forum VRR capability 48–120 Hz and advertises a general range of 48–60 Hz. It removes 4K video codes and related mappings. Structural boundaries, timing and both checksums were checked; full edid-decode conformance was not verified. It is a diagnostic EDID, not a production configuration.
+
+Recovery after the latest RGB8 test verified fixed 4K60 RGB8 SDR without DSC, RAM 0x90000217=08 and 0x9000025B=0A, and identical known factory OS/I2C EDID. Process exit 0; independent recovery guard terminated. Earlier runs sometimes needed a USB-C power cycle to restore a visible picture.
+
+## Next prepared measurement, not yet run
+
+CAC-Mac-Signal-Diagnose-Test.py repeats the bounded, already tested 720p RGB8 comparison with additional read-only instrumentation: exact active DCP timing and color IDs matched to TimingElements, plus adapter port status, packet-path gate, counters and shared scratch buffer before/during/after. The scratch buffer is reused and cannot prove current HDMI packet transmission. The firmware read helper verifies version 7.02.116. No additional write addresses or driver changes are introduced. Independent recovery is scheduled after 420 seconds; normal execution ends earlier.
+
+The objective is a concrete source-timing versus adapter-state comparison, not another arbitrary mode change. User must run via iTerm because agent sandbox device access fails. All results remain research evidence; functioning macOS VRR has not been achieved.
+
+HID busy polling was extended from 10 to 100 iterations; inspect/restore retries are bounded, enable is not retried. Recovery now evaluates the final fixed-mode state after factory cleanup. Git email globally and locally is fricke.andre@gmail.com, as requested by the user; prior six commits were rewritten.

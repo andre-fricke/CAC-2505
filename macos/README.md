@@ -45,3 +45,6 @@ The hotplug test restored RAM08/0A, requested factory EDID, cleared custom EDID 
 ## Provenance
 
 The Swift HID helpers identify themselves as derivatives of [alexsorokoletov/vm7100tool_macos](https://github.com/alexsorokoletov/vm7100tool_macos), an MIT-licensed project. This archive is not a vendor firmware release. No license to redistribute vendor firmware is asserted.
+
+
+Research update, 8 October 2026: TV No Signal persists even with verified physical 720p RGB8 SDR VRR without DSC. See HANDOFF.md and dated evidence. Added tools are bounded diagnostic experiments, not a working macOS solution. The native 720p EDID is a temporary host override. The Signal-Diagnose runner is prepared but has not yet been run.
