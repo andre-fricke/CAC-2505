@@ -2,11 +2,13 @@
 
 This directory preserves experimental CAC-2505 VRR work on an Apple M1 Pro Mac and LG 65QNED869QA, using vendor-supplied Apple/4K120 firmware **7.02.116**. It is **not a working macOS VRR installer**. The supported Steam Deck workaround is in `../steamdeck`.
 
-## Most recent result
+## Most recent result — 8 October 2026
 
-After applying two known volatile RAM settings and physically reconnecting **HDMI only while leaving USB-C powered**, macOS offered a variable refresh rate. Its display attributes reported VRR support and 51 timing dictionaries had nonzero variable ranges. Selecting the variable rate caused the TV to show **No Signal**. The user later confirmed the picture returned.
+The comparison is now narrower: dynamic VRR worked on the J560J15 monitor both through CAC/HDMI from the Steam Deck and directly over USB-C from the M1 Pro Mac. Through CAC/HDMI from the Mac, selecting Variable still produced a black picture, including a verified RGB8 SDR mode without DSC. Stable macOS VRR remains unresolved.
 
-Evidence, limitations and the exact next step are in [HANDOFF.md](HANDOFF.md). [The breakthrough report](evidence/Hotplug-breakthrough.md) records the successful recognition sequence and unsuccessful output activation.
+Two passive AUX staging measurements did not capture the decisive DPCD0x107 request. The shorter run completed262 samples in8seconds without timeout, but the buffer is not a lossless bus trace. This does not prove the Mac failed to send that request. The user confirmed black output during the latest test and normal output after verified restoration.
+
+See [the current comparison and measurement archive](evidence/J560-comparison-20261008/README.md) and [HANDOFF.md](HANDOFF.md). No new firmware, driver patch or macOS installer was produced.
 
 ## Contents
 
@@ -28,15 +30,9 @@ sh macos/tools/build.sh
 
 The tests locate binaries and EDID files beside themselves. Generated logs and snapshots are written there too. The scripts use only whitelisted RAM writes; they do not flash firmware. Some older prompts still use `JA`; newer runners use `YES`. Review each runner's prompt and source before use.
 
-## Current safe next action
+## Current continuation boundary
 
-For the original user's setup, the next pending command is **read-only**:
-
-```bash
-/usr/bin/python3 macos/tools/CAC-Mac-Cache-Lesen.py
-```
-
-It captures current EDID/custom-EDID status, display modes, DPCD, RAM values and registry data. Its full output stays local and should be reviewed before sharing. The last instruction was issued before this repository snapshot; the subsequent post-hotplug capture is now complete; see `evidence/Post-hotplug-current/REPORT.md`.
+No hardware test is pending. Earlier cache and signal captures listed in this archive have completed. There is currently no concrete new hardware-changing test justified by the latest results. Continue only from a new documented/code-supported hypothesis or a supported trace that can distinguish actual AUX reception from source/API reporting. Do not interpret missing staging samples as missing bus transactions or force an internal status bit as a substitute for the firmware handler.
 
 ## Recovery caveat
 

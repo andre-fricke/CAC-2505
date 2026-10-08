@@ -11,3 +11,5 @@ The current helper deliberately accepts only firmware 7.02.116 and the tested LG
 ## macOS investigation
 
 [macos/](macos/README.md) preserves the experimental Mac work, diagnosis scripts and handoff. macOS VRR recognition was achieved after a physical HDMI hotplug, but selecting the variable rate caused signal loss. **Stable macOS VRR remains unresolved.** See [the handoff](macos/HANDOFF.md) before continuing.
+
+Latest research update (8 October 2026): J560 control comparisons confirmed dynamic VRR on direct Mac USB-C and on Steam Deck → CAC → HDMI. Mac → CAC → HDMI remains unsuccessful, including RGB8 SDR without DSC. [Current findings and measurement limitations](macos/evidence/J560-comparison-20261008/README.md) are archived; no working macOS patch is available.

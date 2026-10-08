@@ -77,10 +77,23 @@ A normal desktop resolution selection did not produce a physical 720p signal. A 
 
 Recovery after the latest RGB8 test verified fixed 4K60 RGB8 SDR without DSC, RAM 0x90000217=08 and 0x9000025B=0A, and identical known factory OS/I2C EDID. Process exit 0; independent recovery guard terminated. Earlier runs sometimes needed a USB-C power cycle to restore a visible picture.
 
-## Next prepared measurement, not yet run
+## Historical prepared measurement (subsequently completed)
 
 CAC-Mac-Signal-Diagnose-Test.py repeats the bounded, already tested 720p RGB8 comparison with additional read-only instrumentation: exact active DCP timing and color IDs matched to TimingElements, plus adapter port status, packet-path gate, counters and shared scratch buffer before/during/after. The scratch buffer is reused and cannot prove current HDMI packet transmission. The firmware read helper verifies version 7.02.116. No additional write addresses or driver changes are introduced. Independent recovery is scheduled after 420 seconds; normal execution ends earlier.
 
 The objective is a concrete source-timing versus adapter-state comparison, not another arbitrary mode change. User must run via iTerm because agent sandbox device access fails. All results remain research evidence; functioning macOS VRR has not been achieved.
 
 HID busy polling was extended from 10 to 100 iterations; inspect/restore retries are bounded, enable is not retried. Recovery now evaluates the final fixed-mode state after factory cleanup. Git email globally and locally is fricke.andre@gmail.com, as requested by the user; prior six commits were rewritten.
+
+
+## Latest update: 8 October 2026, after AUX controls
+
+See notes/AUX-path-investigation-20261008.md and the new derived evidence folders. Earlier prepared signal-diagnostic and subsequent controls have completed. Current user-confirmed state is stable fixed4K120HDR after full USB-C power cycle. The two known RAM values alone and HDMI re-enumeration did not resolve the Mac read-path difference. There is no currently armed test or recovery watchdog, no patched firmware, and no confirmed macOS VRR fix. Next work is localization of the AUX response discrepancy; no additional hardware-changing experiment is yet justified.
+
+## Current handoff: J560 controls and short AUX capture completed
+
+The latest authoritative state is in [J560-comparison-20261008](evidence/J560-comparison-20261008/README.md). Direct Mac USB-C VRR and Deck/CAC HDMI VRR were visually positive on J560. Mac/CAC HDMI Variable remains black even with RGB8 SDR and no DSC. The latest user confirmed picture returned after the test; RAM08/0A, factory OS EDID and cleared override were verified restored. These J560 settings are SDR, not the LG4K120HDR baseline described earlier.
+
+The28-second sampler terminated after about16seconds with a timeout. A subsequent8-second single-buffer sampler completed262 reads, exit0. Neither observed00107; neither is a complete wire trace. Source connection reports fell back from Variable to fixed, and the user observed black output during the latest Variable interval.
+
+Static firmware and DCP findings are archived with offsets and uncertainty. DPCD2214 is tied to the RAM217 capability bit; the DCP consumes its bit0 in a broader feature decision involving Panel Replay and Autonomous FRL. This is not a proven VRR activation switch or failure cause. No new configuration bytes, firmware image or installer should be inferred from this work. There is no prepared next hardware test; further identical mode/RAM trials are not a justified next step.
